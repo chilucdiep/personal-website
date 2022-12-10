@@ -1,0 +1,31 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .Logo {
+      max-width: 60px;
+    }
+    
+    a {
+      cursor: pointer;
+    }
+
+    .Links {
+        display: flex;
+        gap: 4em;
+    }
+    
+    .SocialLinks {
+      display: flex;
+      align-items: center;
+      gap: 4em;
+      
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  
+  
+  
