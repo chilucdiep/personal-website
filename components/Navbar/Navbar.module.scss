@@ -1,31 +1,43 @@
 .Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .Logo {
+    max-width: 60px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .Links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    .Logo {
-      max-width: 60px;
+    gap: 4em;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
     }
-    
-    a {
-      cursor: pointer;
+  }
+
+  .SocialLinks {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    @media screen and (max-width: 700px) {
+      display: none;
     }
 
-    .Links {
-        display: flex;
-        gap: 4em;
-    }
-    
-    .SocialLinks {
-      display: flex;
-      align-items: center;
-      gap: 4em;
-      
-      @media screen and (max-width: 700px) {
-        display: none;
+    .SocialItem {
+      width: 35px !important;
+      opacity: 0.7;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
       }
     }
   }
-  
-  
-  
+}

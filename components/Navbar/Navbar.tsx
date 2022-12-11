@@ -14,21 +14,24 @@ export function Navbar() {
       <div className={styles.SocialLinks}>
         <SocialIcon
           bgColor="transparent"
-          fgColor="grey"
+          fgColor="black"
           url="https://www.linkedin.com/in/chi-luc-diep/"
           href="_target"
+          className={styles.SocialItem}
         />
         <SocialIcon
           bgColor="transparent"
-          fgColor="grey"
+          fgColor="black"
           url="https://github.com/chilucdiep"
           href="_target"
+          className={styles.SocialItem}
         />
         <SocialIcon
           bgColor="transparent"
-          fgColor="grey"
+          fgColor="black"
           url="mailto:chilucdiep@hotmail.com"
           href="_target"
+          className={styles.SocialItem}
         />
       </div>
     </nav>

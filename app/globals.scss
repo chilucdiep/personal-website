@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  --mainColor: #6773ff;
+}
+
+::selection {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+
+  @media screen and (max-width: 700px) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--mainColor);
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--mainColor);
+    margin-right: 1em;
+  }
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 200%;
+}
+
+.Title {
+  font-size: 3.5rem;
+  font-weight: 600;
+
+  @media screen and (max-width: 700px) {
+    font-size: 2.1rem;
+  }
+}
+
+.Container {
+  max-width: 1300px;
+  padding: 0.6em 1.5em;
+  margin: auto;
+
+  @media screen and (min-width: 1050px) {
+    padding: 0.8em 8em;
+  }
+}
