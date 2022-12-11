@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
-import styles from "./Navbar.module.scss";
+import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../assets/images/Logo.svg";
+import styles from "./Navbar.module.scss";
 
 export function Navbar() {
   return (
