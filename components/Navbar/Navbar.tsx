@@ -1,11 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 import styles from "./Navbar.module.scss";
+import Logo from "../../assets/images/Logo.svg";
 
 export function Navbar() {
   return (
     <nav className={styles.Navbar}>
-      <div>Logo</div>
+      <Link href="/">
+        <Image src={Logo} width={60} alt="Logo of the website" />
+      </Link>
       <div className={styles.Links}>
         <Link href="/">Work</Link>
         <Link href="/">About</Link>
