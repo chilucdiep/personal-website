@@ -1,0 +1,52 @@
+.Button {
+  border: none;
+  border-radius: 30px;
+  padding: 0 3em;
+  height: 50px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 0.875rem;
+  width: fit-content;
+  transition: all 0.2s ease;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  span {
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.Button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 30px;
+  z-index: -1;
+  border: 1px solid var(--mainColor);
+  border-right: 1px solid transparent;
+  width: 48px;
+  height: 48px;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.Button:hover {
+  cursor: pointer;
+  color: white;
+
+  &::before {
+    width: 100%;
+    background-color: #6773ff;
+    // background-image: linear-gradient(81.36deg, #6773ff -4.59%, #958eff 76.12%);
+  }
+}

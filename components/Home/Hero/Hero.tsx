@@ -1,6 +1,7 @@
 import styles from "./Hero.module.scss";
 import Image from "next/image";
 import HeroImg from "../../../assets/images/Home/Hero/HeroImg.png";
+import { Button } from "../../Button";
 
 export function Hero() {
   // const HeroImgStyle = {
@@ -23,12 +24,10 @@ export function Hero() {
         experiences for people️.
       </p>
       <div className={styles.Button}>
-        {/* <Button
-        icon={MAIL_ICON}
-        label="chilucdiep@hotmail.com"
-        onClick={copyEmail}
-      /> */}
-        <button>ok</button>
+        <Button
+          label="chilucdiep@hotmail.com"
+          // onClick={() => console.log("ok")}
+        />
       </div>
     </div>
   );
@@ -39,4 +38,16 @@ export function Hero() {
       <Image src={HeroImg} alt="Clay Tech Illustration" />
     </section>
   );
+
+  async function copyEmail() {
+    const email = "chilucdiep@hotmail.com";
+
+    try {
+      await navigator.clipboard.writeText(email);
+      alert(`You copied '${email}' to your clipboard!`);
+      console.log("Page URL copied to clipboard");
+    } catch (err) {
+      console.error("Failed to copy", err);
+    }
+  }
 }
