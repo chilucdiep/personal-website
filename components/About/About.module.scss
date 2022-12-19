@@ -1,0 +1,22 @@
+.AboutContainer {
+  h2 {
+    margin: 0.5em 0 1em;
+  }
+
+  .Hero {
+    text-align: center;
+    margin: 7em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      max-width: 450px;
+    }
+  }
+}
