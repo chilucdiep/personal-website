@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Journey } from "./Journey";
 import { Experience } from "./Experience";
+import { Mission } from "./Mission";
 
 export function About() {
   const heroMarkup = (
@@ -21,6 +22,7 @@ export function About() {
       {heroMarkup}
       <Journey />
       <Experience />
+      <Mission />
     </section>
   );
 }

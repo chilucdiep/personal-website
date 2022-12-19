@@ -1,0 +1,45 @@
+.Mission {
+  margin: 5em 0;
+
+  h2 {
+    max-width: 630px;
+    margin-bottom: 0.5em;
+
+    span {
+      color: #6773ff;
+    }
+  }
+
+  .Description {
+    @media screen and (min-width: 700px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Text {
+      .Caption {
+        max-width: 700px;
+        margin-bottom: 3.2em;
+      }
+
+      li {
+        margin-top: 2.2em;
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 0.8rem;
+          max-width: 560px;
+        }
+      }
+    }
+
+    img {
+      max-width: 450px;
+      height: auto;
+    }
+  }
+}
