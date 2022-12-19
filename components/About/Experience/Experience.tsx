@@ -27,7 +27,6 @@ export function Experience() {
         <Image src={ColoredByte} alt="ColoredByte Logo" />
         <Image src={Pratt} alt="Pratt Logo" className={styles.Smaller} />
       </div>
-      <Image src={Wave} alt="Wave Separator" />
     </div>
   );
 
@@ -35,6 +34,7 @@ export function Experience() {
     <>
       {skillsMarkup}
       {experienceMarkup}
+      <Image src={Wave} alt="Wave Separator" />
     </>
   );
 }
