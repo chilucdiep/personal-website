@@ -13,3 +13,35 @@
     margin: 0;
   }
 }
+
+.Experience {
+  margin-bottom: 5em;
+
+  h2 {
+    opacity: 0.7;
+    margin: 0.5em 0;
+  }
+
+  .LogoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5em;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5em;
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+      justify-items: center;
+    }
+
+    .Smaller {
+      width: 60%;
+    }
+
+    img {
+      min-width: 80px;
+    }
+  }
+}
