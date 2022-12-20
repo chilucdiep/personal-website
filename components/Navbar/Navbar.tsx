@@ -8,7 +8,7 @@ import { SOCIAL_LINKS } from "../../assets/constants/socialLinks";
 export function Navbar() {
   const navLinksMarkup = (
     <div className={styles.Links}>
-      <Link href="/">Work</Link>
+      <Link href="/#work-section">Work</Link>
       <Link href="/about">About</Link>
       <Link href="/">Blog</Link>
     </div>
