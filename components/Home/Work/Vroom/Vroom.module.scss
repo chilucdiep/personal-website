@@ -2,12 +2,13 @@ svg {
   .VroomPage {
     transform-origin: center;
     transform-box: fill-box;
+    transform: translate(5px);
     transition: all 0.3s ease-in-out;
   }
 
   &:hover {
     .VroomPage {
-      transform: rotateZ(-6deg) translate(-5px, -2px);
+      transform: rotateZ(-6deg) translate(-5px, -5px);
     }
   }
 }

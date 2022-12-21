@@ -9,6 +9,7 @@ interface WorkCardProps {
   title: string;
   description: string;
   tech: string;
+  projectUrl: string;
   figmaUrl?: string;
   isDone?: boolean;
   children: any;
@@ -20,6 +21,7 @@ export function WorkCard({
   title,
   description,
   tech,
+  projectUrl,
   figmaUrl,
   isDone = true,
   children,
@@ -71,7 +73,7 @@ export function WorkCard({
           <img src={GreyGithubIcon} alt="Github Icon" />
         </a>
       </div> */}
-      <a href="/about">{children}</a>
+      <a href={projectUrl}>{children}</a>
     </div>
   );
 
@@ -80,7 +82,7 @@ export function WorkCard({
       <div className={styles.WorkText}>
         {workInfoMarkup}
         {techMarkup}
-        <Link href="/about" target="_blank">
+        <Link href={projectUrl} target="_blank">
           <Button icon={ARROW_ICON} label="View Project" work />
         </Link>
       </div>
