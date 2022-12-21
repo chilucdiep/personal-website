@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Daylee } from "./Daylee";
+import { Vroom } from "./Vroom";
 import styles from "./Work.module.scss";
 
 export function Work() {
@@ -32,7 +33,14 @@ export function Work() {
     </div>
   );
 
-  const workMarkup = isFeaturesSelected ? <Daylee /> : <p>other</p>;
+  const workMarkup = isFeaturesSelected ? (
+    <>
+      <Daylee />
+      <Vroom />
+    </>
+  ) : (
+    <p>other</p>
+  );
 
   return (
     <div className={styles.WorkContainer} id="work-section">

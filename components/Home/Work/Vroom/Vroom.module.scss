@@ -1,0 +1,13 @@
+svg {
+  .VroomPage {
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .VroomPage {
+      transform: rotateZ(-6deg) translate(0px, -2px);
+    }
+  }
+}
