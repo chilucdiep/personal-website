@@ -11,6 +11,46 @@
   }
 
   .WorkImg {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    .Overlay {
+      position: absolute;
+      left: 45%;
+      top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+
+      .SocialItem {
+        background-color: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgb(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+
+        svg {
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+
+          svg {
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .Overlay {
+        opacity: 1;
+      }
+    }
+
     .Thumbnail {
       svg {
         overflow: visible;

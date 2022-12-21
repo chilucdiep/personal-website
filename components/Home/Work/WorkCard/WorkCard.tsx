@@ -61,7 +61,7 @@ export function WorkCard({
   const figmaOverlayMarkup = figmaUrl ? (
     <SocialIcon
       bgColor="transparent"
-      fgColor="black"
+      fgColor="white"
       url={figmaUrl}
       target="_blank"
       className={styles.SocialItem}
@@ -71,7 +71,7 @@ export function WorkCard({
   const githubOverlayMarkup = githubUrl ? (
     <SocialIcon
       bgColor="transparent"
-      fgColor="black"
+      fgColor="white"
       url={githubUrl}
       target="_blank"
       className={styles.SocialItem}
