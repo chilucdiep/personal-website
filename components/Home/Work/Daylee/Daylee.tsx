@@ -15,6 +15,7 @@ export function Daylee() {
         tech="TypeScript, React, Next.js, Scss"
         projectUrl="http://vroom2.ca/"
         figmaUrl="https://www.figma.com/file/BH6GRyC4CYVTOO4zrqESCs/Productivity-Board?node-id=0%3A1"
+        githubUrl="https://github.com/Daylee-Digital-Journal/daylee"
         isDone={false}
       >
         <DayleeThumbnail />

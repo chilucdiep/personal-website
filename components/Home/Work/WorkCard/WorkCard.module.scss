@@ -11,17 +11,19 @@
   }
 
   .WorkImg {
-    svg {
-      overflow: visible;
-      width: 330px;
+    .Thumbnail {
+      svg {
+        overflow: visible;
+        width: 330px;
 
-      @media screen and (min-width: 700px) {
-        width: 400px;
-        height: fit-content;
-      }
+        @media screen and (min-width: 700px) {
+          width: 400px;
+          height: fit-content;
+        }
 
-      @media screen and (min-width: 1000px) {
-        width: 550px !important;
+        @media screen and (min-width: 1000px) {
+          width: 550px !important;
+        }
       }
     }
   }

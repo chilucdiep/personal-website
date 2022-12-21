@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 import { ARROW_ICON } from "../../../../assets/constants/icons";
 import { Button } from "../../../Button";
 import styles from "./WorkCard.module.scss";
@@ -11,6 +12,7 @@ interface WorkCardProps {
   tech: string;
   projectUrl: string;
   figmaUrl?: string;
+  githubUrl?: string;
   isDone?: boolean;
   children: any;
 }
@@ -23,6 +25,7 @@ export function WorkCard({
   tech,
   projectUrl,
   figmaUrl,
+  githubUrl,
   isDone = true,
   children,
 }: WorkCardProps) {
@@ -55,25 +58,40 @@ export function WorkCard({
     </p>
   );
 
+  const figmaOverlayMarkup = figmaUrl ? (
+    <SocialIcon
+      bgColor="transparent"
+      fgColor="black"
+      url={figmaUrl}
+      target="_blank"
+      className={styles.SocialItem}
+    />
+  ) : null;
+
+  const githubOverlayMarkup = githubUrl ? (
+    <SocialIcon
+      bgColor="transparent"
+      fgColor="black"
+      url={githubUrl}
+      target="_blank"
+      className={styles.SocialItem}
+    />
+  ) : null;
+
+  const overlayMarkup =
+    githubUrl || figmaUrl ? (
+      <div className={styles.Overlay}>
+        {figmaOverlayMarkup}
+        {githubOverlayMarkup}
+      </div>
+    ) : null;
+
   const thumbnailMarkup = (
     <div className={styles.WorkImg}>
-      {/* <div className={styles.Overlay}>
-        <a
-          href="https://www.figma.com/file/BH6GRyC4CYVTOO4zrqESCs/Productivity-Board?node-id=0%3A1"
-          target="_blank"
-          className={styles.OverlayLinks}
-          rel="noreferrer"
-        >
-          <img src={FigmaIcon} alt="Figma Icon" />
-        </a>
-        <a
-          href="https://github.com/Daylee-Digital-Journal/daylee"
-          className={styles.OverlayLinks}
-        >
-          <img src={GreyGithubIcon} alt="Github Icon" />
-        </a>
-      </div> */}
-      <a href={projectUrl}>{children}</a>
+      {overlayMarkup}
+      <a href={projectUrl} className={styles.Thumbnail}>
+        {children}
+      </a>
     </div>
   );
 
