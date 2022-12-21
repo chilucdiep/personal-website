@@ -7,16 +7,18 @@ import Typewriter from "typewriter-effect";
 export function Hero() {
   const words = ["Chi-Luc", "a developer", "a designer"];
 
-  const typeWriterMarkup = <h1 className="Title">I&apos;m Chi-Luc</h1>;
+  const typeWriterMarkup = (
+    <h1 className="Title">Enhancing Digital Experiences</h1>
+  );
 
   const heroTextMarkup = (
     <div className={styles.HeroText}>
-      <h3>Oh hello! 👋</h3>
+      <h3>Hello! 👋 I specialize in</h3>
       {typeWriterMarkup}
       <p>
-        I enjoy bridging <span>Front-End Development</span> &{" "}
-        <span>Product Design</span> to build beautiful and accessible digital
-        experiences for people️.
+        My goal is to bridge <span>Front-End Development</span> &{" "}
+        <span>Product Design</span> to build beautiful, accessible and
+        user-centered products for people️.
       </p>
       <EmailButton />
     </div>
