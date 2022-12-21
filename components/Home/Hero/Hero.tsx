@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 export function Hero() {
   const words = ["Chi-Luc", "a developer", "a designer"];
 
-  const typeWriterMarkup = <h1 className="Title">I'm Chi-Luc</h1>;
+  const typeWriterMarkup = <h1 className="Title">I&apos;m Chi-Luc</h1>;
 
   const heroTextMarkup = (
     <div className={styles.HeroText}>

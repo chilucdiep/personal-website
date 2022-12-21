@@ -10,7 +10,7 @@ export function Journey() {
       <h2>My journey in tech</h2>
       <p>
         My name is Chi-Luc and I am a Software Developer based in 📍 Montreal,
-        Canada. I’m currently at{" "}
+        Canada. I&apos;m currently at{" "}
         <Link
           href="https://www.poka.io"
           target="_blank"
@@ -18,7 +18,7 @@ export function Journey() {
         >
           <strong>Poka</strong>
         </Link>{" "}
-        where I have a direct impact on the business' metrics as a Frontend
+        where I have a direct impact on the business&apos; metrics as a Frontend
         Developer working on the pricing plans & web admin.
       </p>
       <p>
@@ -30,9 +30,9 @@ export function Journey() {
         >
           <strong>Coveo</strong>
         </Link>{" "}
-        where I delivered usage analytics solutions to Coveo's clients. From
-        revamping a master component in the design system, to designing a Data
-        Health feature, I’m always looking for ways to improve the user
+        where I delivered usage analytics solutions to Coveo&apos;s clients.
+        From revamping a master component in the design system, to designing a
+        Data Health feature, I’m always looking for ways to improve the user
         experience by tackling interesting challenges.
       </p>
       <p>
