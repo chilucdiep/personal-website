@@ -1,0 +1,45 @@
+.Left,
+.Right {
+  margin-bottom: 5em;
+
+  h2 {
+    margin: 0.3em 0 0.8em;
+  }
+
+  p {
+    max-width: 540px;
+  }
+
+  .WorkImg {
+    svg {
+      overflow: visible;
+      width: 330px;
+
+      @media screen and (min-width: 700px) {
+        width: 400px;
+        height: fit-content;
+      }
+
+      @media screen and (min-width: 1000px) {
+        width: 550px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .Left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .Right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 3em;
+  }
+}

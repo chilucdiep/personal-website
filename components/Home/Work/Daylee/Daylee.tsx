@@ -1,4 +1,5 @@
 import { WorkCard } from "../WorkCard";
+import DayleeThumbnail from "./DayleeThumbnail";
 
 export function Daylee() {
   return (
@@ -14,7 +15,9 @@ export function Daylee() {
         tech="TypeScript, React, Next.js, Scss"
         figmaUrl="https://www.figma.com/file/BH6GRyC4CYVTOO4zrqESCs/Productivity-Board?node-id=0%3A1"
         isDone={false}
-      />
+      >
+        <DayleeThumbnail />
+      </WorkCard>
     </>
   );
 }
