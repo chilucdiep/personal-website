@@ -13,7 +13,7 @@ export function Hero() {
 
   const heroTextMarkup = (
     <div className={styles.HeroText}>
-      <h3>Hello! 👋 I specialize in</h3>
+      <h3>Oh hello! 👋 I specialize in</h3>
       {typeWriterMarkup}
       <p>
         My goal is to bridge <span>Front-End Development</span> &{" "}
