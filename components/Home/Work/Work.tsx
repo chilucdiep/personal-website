@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Daylee } from "./Daylee";
 import styles from "./Work.module.scss";
 
 export function Work() {
@@ -36,6 +37,7 @@ export function Work() {
     <div className={styles.WorkContainer} id="work-section">
       <h1>Cool things I created</h1>
       {filtersMarkup}
+      <Daylee />
     </div>
   );
 }
