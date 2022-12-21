@@ -29,15 +29,16 @@ export function Work() {
       >
         Other
       </button>
-      <p>{isFeaturesSelected ? "ok" : "no"}</p>
     </div>
   );
+
+  const workMarkup = isFeaturesSelected ? <Daylee /> : <p>other</p>;
 
   return (
     <div className={styles.WorkContainer} id="work-section">
       <h1>Cool things I created</h1>
       {filtersMarkup}
-      <Daylee />
+      {workMarkup}
     </div>
   );
 }
