@@ -13,16 +13,4 @@
     max-width: 40em;
     margin-bottom: 6em;
   }
-
-  .Mockups {
-    display: grid;
-    grid-template-columns: 52% 1fr;
-    gap: 2em;
-
-    .DayleeDashboardImg {
-      @media (min-width: 700px) {
-        margin-top: 8em;
-      }
-    }
-  }
 }

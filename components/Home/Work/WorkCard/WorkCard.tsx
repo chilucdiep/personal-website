@@ -14,7 +14,7 @@ interface WorkCardProps {
   figmaUrl?: string;
   githubUrl?: string;
   isDone?: boolean;
-  children: any;
+  children: React.ReactNode;
 }
 
 export function WorkCard({
