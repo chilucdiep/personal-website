@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Daylee } from "./Daylee";
-import { Vroom } from "./Vroom";
+import { Daylee } from "./Projects/Daylee";
+import { Vroom } from "./Projects/Vroom";
 import styles from "./Work.module.scss";
 
 export function Work() {

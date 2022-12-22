@@ -1,4 +1,4 @@
-import { WorkCard } from "../WorkCard";
+import { WorkCard } from "../../WorkCard";
 import VroomThumbnail from "./VroomThumbnail";
 
 export function Vroom() {

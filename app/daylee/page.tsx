@@ -1,4 +1,4 @@
-import { DayleeProject } from "../../components/Projects/DayleeProject";
+import { DayleeProject } from "../../components/ProjectDetails/DayleeProject";
 
 export default function DayleePage() {
   return (
