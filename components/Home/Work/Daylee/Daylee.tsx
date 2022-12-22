@@ -12,7 +12,7 @@ export function Daylee() {
           their schedule and life. For this project, I created the design system
           and built the entire front-end design."
       tech="TypeScript, React, Next.js, Scss"
-      projectUrl="http://vroom2.ca/"
+      projectUrl="/daylee"
       figmaUrl="https://www.figma.com/file/BH6GRyC4CYVTOO4zrqESCs/Productivity-Board?node-id=0%3A1"
       githubUrl="https://github.com/Daylee-Digital-Journal/daylee"
       isDone={false}
