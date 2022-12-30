@@ -4,6 +4,7 @@ import { HeroTemplate } from "../ProjectTemplate";
 import DayleeDashboard from "../../../assets/images/ProjectDetails/Daylee/DayleeDashboard.svg";
 import DayleeLanding from "../../../assets/images/ProjectDetails/Daylee/DayleeLanding.svg";
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
+import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
 
 export function DayleeProject() {
   const heroMarkup = (
@@ -29,7 +30,12 @@ export function DayleeProject() {
     </HeroTemplate>
   );
 
-  const projectContentMarkup = <ContentTemplate />;
+  const projectContentMarkup = (
+    <ContentTemplate>
+      <SidePanel />
+      <div>ok</div>
+    </ContentTemplate>
+  );
 
   return (
     <>

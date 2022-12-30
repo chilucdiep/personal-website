@@ -1,0 +1,30 @@
+.SidePanel {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1.5em;
+  align-self: flex-start;
+  margin-bottom: 15em;
+
+  h4 {
+    color: #6773ff;
+    margin: 1.5em 0 0.7em;
+  }
+
+  .LinkItem {
+    margin-bottom: 1.5em;
+
+    .Link {
+      display: flex;
+      gap: 0.5em;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      .Icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
