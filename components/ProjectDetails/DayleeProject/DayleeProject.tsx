@@ -19,7 +19,12 @@ export function DayleeProject() {
             src={DayleeDashboard}
             alt="Daylee Dashboard"
           />
-          <Image src={DayleeLanding} alt="Daylee DayleeLanding" />
+          <Image
+            src={DayleeLanding}
+            alt="Daylee DayleeLanding"
+            width={480}
+            height={830}
+          />
         </div>
       </HeroTemplate>
     </div>
