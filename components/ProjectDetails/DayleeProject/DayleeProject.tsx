@@ -5,6 +5,7 @@ import DayleeDashboard from "../../../assets/images/ProjectDetails/Daylee/Daylee
 import DayleeLanding from "../../../assets/images/ProjectDetails/Daylee/DayleeLanding.svg";
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
+import { MainContent } from "../ProjectTemplate/ContentTemplate/MainContent";
 
 export function DayleeProject() {
   const heroMarkup = (
@@ -48,7 +49,7 @@ export function DayleeProject() {
         ]}
         date="On going"
       />
-      <div>ok</div>
+      <MainContent />
     </ContentTemplate>
   );
 
