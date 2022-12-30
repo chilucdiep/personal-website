@@ -32,7 +32,22 @@ export function DayleeProject() {
 
   const projectContentMarkup = (
     <ContentTemplate>
-      <SidePanel />
+      <SidePanel
+        githubLink="https://github.com/Daylee-Digital-Journal/daylee"
+        projectLink="https://daylee-web.herokuapp.com/"
+        roles={["Front-End Developer", "Product Designer"]}
+        team={["Back-End Developer"]}
+        techStack={[
+          "HTML",
+          "Scss",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "GraphQL",
+          "Figma",
+        ]}
+        date="On going"
+      />
       <div>ok</div>
     </ContentTemplate>
   );
