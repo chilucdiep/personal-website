@@ -5,7 +5,6 @@ import DayleeDashboard from "../../../assets/images/ProjectDetails/Daylee/Daylee
 import DayleeLanding from "../../../assets/images/ProjectDetails/Daylee/DayleeLanding.svg";
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
-import { MainContent } from "../ProjectTemplate/ContentTemplate/MainContent";
 import { DayleeMainContent } from "./DayleeMainContent";
 
 export function DayleeProject() {

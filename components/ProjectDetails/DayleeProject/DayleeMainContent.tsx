@@ -16,10 +16,10 @@ export function DayleeMainContent() {
     <div className={styles.ContentSection}>
       <h2>Design system</h2>
       <p>
-        For better consistency throughout the app and a better developer
-        experience, I created and implemented the Daylee’s design system and
-        component library. This design system lay down the rules to follow when
-        it comes to typography, color, buttons, input, branding, and more.
+        To improve consistency throughout the app and streamline the development
+        process, I developed and implemented a design system and component
+        library for Daylee. The design system includes guidelines for
+        typography, color, buttons, input forms, branding, and more.
       </p>
       <Image src={DesignSystem} alt="Design System" className={styles.Full} />
       <p>
@@ -58,11 +58,17 @@ export function DayleeMainContent() {
       <h2>Some cool features</h2>
       <h4>Pomodoro timer</h4>
       <p>
-        The pomodoro timer is a time manaagement method that promotes focus time
-        with its 25 minutes work interval followed by a 5 minutes break. In
-        addition of starting and pausing the timer, this feature also keeps
-        track of the number of cycles/rounds completed paired with a goal of
-        rounds to achieve.
+        The pomodoro timer is a powerful time management tool that helps users
+        stay focused and productive. With 25-minute work intervals followed by
+        5-minute breaks, the timer promotes a healthy work-life balance and
+        helps users stay on track.
+      </p>
+      <p>
+        In addition to starting and pausing the timer, the feature also tracks
+        the number of cycles/rounds completed and allows users to set goals for
+        their progress. As a result, the pomodoro timer has had a significant
+        impact on the efficiency and effectiveness of our users, helping them to
+        better manage their time and achieve their goals.
       </p>
       <div className={styles.TwoColumnGrid}>
         <Image src={PomodoroCode} alt="Pomodoro Code" />
@@ -70,11 +76,26 @@ export function DayleeMainContent() {
       </div>
       <h4>To-do list</h4>
       <p>
-        The to-do list allows the user to plan their daily tasks with the option
-        to reflect on the day for gratitude practice or introspection. This
-        feature was implemented with the useRef hook to allow the user the
-        option to add a to-do by pressing the “Enter” key. This gives the
-        component a seemless user experience.
+        The to-do list is a powerful tool for helping users plan and prioritize
+        their daily tasks. It's a simple and effective way to stay on top of
+        everything that needs to be done.
+      </p>
+      <p>
+        To add additional value to the to-do list, the app includes the option
+        for users to reflect on the day for gratitude practice or introspection.
+        This helps users take a well-rounded and mindful approach to
+        productivity, and can make a big difference in their overall happiness
+        and well-being.
+      </p>
+      <p>
+        To ensure a seamless user experience, we've implemented the to-do list
+        with the useRef hook. This allows users to add a to-do by pressing the
+        "Enter" key, making it easy and intuitive to use.
+      </p>
+      <p>
+        Overall, the to-do list has a significant impact on the efficiency and
+        productivity of our users. It's a simple but powerful tool that helps
+        them better manage their time and achieve their goals.
       </p>
       <div className={styles.TwoColumnGrid}>
         <Image src={TodoCode} alt="Todo Code" />
@@ -87,26 +108,20 @@ export function DayleeMainContent() {
     <div className={styles.ContentSection}>
       <h2>Lessons learned</h2>
       <p>
-        • Build highly re-usable and flexible components (Custom design system)
+        Through building the Daylee app, I learned the importance of creating
+        highly reusable and flexible components, as demonstrated by the custom
+        design system I implemented. I also gained valuable experience working
+        with time manipulation in JavaScript. As the project continues, I look
+        forward to learning more and improving the app even further
       </p>
-      <p>• Get more familiar with manipulating time in JavaScript</p>
-      <p>• More to come.. Project still on going</p>
     </div>
   );
 
   return (
     <MainContent
-      projectBrief="I was responsible for designing and building the Daylee website and
-  web app using React. This includes creating & implementing a design
-  system and building a landing page & dashboard with multiple
-  productivity tools such as a pomodoro timer, habit tracker, to-do
-  lists, and more."
-      problem="Students & professionals can only organize their life and schedules
-  using either analog methods, a multitude of productivity tools that
-  scatter important information, or a software with a big learning curve
-  like Notion."
-      goal="Provide an easy and intuitive way to balance work, projects, social
-  life and personal growth in a all-in-one solution."
+      projectBrief="As the lead designer and developer for the Daylee project, I used React to create a comprehensive website and web app that helps students and professionals organize their lives and schedules in one central location. My responsibilities included establishing a design system that ensured a cohesive and consistent look and feel throughout the app, as well as building a landing page and dashboard with a range of productivity tools including a customizable pomodoro timer, habit tracker, and to-do lists. I also implemented various features such as goal setting, gratitude practice and progress updates to help users manage their work, projects, social life, and personal growth in an intuitive and efficient way."
+      problem="Organizing life and schedules can be difficult with the limited options available, including analog methods, scattered productivity tools, or complex software like Notion."
+      goal="Daylee aims to provide users with a simple and intuitive platform that helps them balance their work, projects, social life, and personal growth in one central location. The app offers a comprehensive, all-in-one solution that includes a range of productivity tools and features to support organization and time management"
     >
       {designSystemMarkup}
       {featuresMarkup}

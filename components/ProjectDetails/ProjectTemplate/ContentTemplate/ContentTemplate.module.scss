@@ -7,12 +7,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: 55em;
+    // top: 55em;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
     height: 450%;
-    max-height: 4745px;
+    max-height: 3900px;
     background: linear-gradient(
       180deg,
       rgba(246, 247, 254, 0) 0%,
