@@ -1,6 +1,7 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
+import getPostMetadata from "../../../utils/getPostMetadata";
 
 export default function PostPage(props: any) {
   const slug = props.params.slug;
@@ -22,3 +23,10 @@ export default function PostPage(props: any) {
     return matterResult;
   }
 }
+
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+};
