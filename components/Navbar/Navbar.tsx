@@ -10,7 +10,7 @@ export function Navbar() {
     <div className={styles.Links}>
       <Link href="/#work-section">Work</Link>
       <Link href="/about">About</Link>
-      <Link href="/">Blog</Link>
+      <Link href="/blog">Blog</Link>
     </div>
   );
 
