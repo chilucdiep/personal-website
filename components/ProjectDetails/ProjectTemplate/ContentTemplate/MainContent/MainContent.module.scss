@@ -1,11 +1,35 @@
 .MainContent {
   margin-bottom: 5em;
 
+  .NoMargin {
+    margin: 0 !important;
+  }
+
   .ContentSection {
     margin-bottom: 3.5em;
 
     h2 {
       margin-top: 0;
+    }
+
+    img {
+      margin: 1em 0;
+      height: 100%;
+    }
+
+    .ThreeColumnGrid {
+      margin: 2em 0;
+
+      @media (min-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        gap: 2em;
+      }
+
+      img {
+        margin: 0;
+      }
     }
   }
 }
