@@ -1,6 +1,6 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
-// import matter from "gray-matter";
+import matter from "gray-matter";
 
 export default function PostPage(props: any) {
   const slug = props.params.slug;
@@ -8,8 +8,8 @@ export default function PostPage(props: any) {
 
   return (
     <div>
-      {slug}
-      <Markdown>{post}</Markdown>
+      <h1>{post.data.title}</h1>
+      <Markdown>{post.content}</Markdown>
     </div>
   );
 
@@ -17,9 +17,8 @@ export default function PostPage(props: any) {
     const folder = "posts/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
+    const matterResult = matter(content);
 
-    return content;
-    // const matterResult = matter(content);
-    // return matterResult;
+    return matterResult;
   }
 }
