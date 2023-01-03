@@ -83,6 +83,17 @@ export function DayleeMainContent() {
     </div>
   );
 
+  const lessonsMarkup = (
+    <div className={styles.ContentSection}>
+      <h2>Lessons learned</h2>
+      <p>
+        • Build highly re-usable and flexible components (Custom design system)
+      </p>
+      <p>• Get more familiar with manipulating time in JavaScript</p>
+      <p>• More to come.. Project still on going</p>
+    </div>
+  );
+
   return (
     <MainContent
       projectBrief="I was responsible for designing and building the Daylee website and
@@ -99,6 +110,7 @@ export function DayleeMainContent() {
     >
       {designSystemMarkup}
       {featuresMarkup}
+      {lessonsMarkup}
     </MainContent>
   );
 }
