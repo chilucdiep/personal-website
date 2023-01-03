@@ -8,7 +8,13 @@ export default function PostPage(props: any) {
   const post = getPostContent(slug);
 
   return (
-    <div>
+    <div
+      style={{
+        maxWidth: "800px",
+        margin: "6em auto",
+      }}
+    >
+      <h5>{post.data.subtitle}</h5>
       <h1>{post.data.title}</h1>
       <Markdown>{post.content}</Markdown>
     </div>

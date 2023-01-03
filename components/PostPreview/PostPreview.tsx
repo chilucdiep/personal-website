@@ -12,10 +12,10 @@ export function PostPreview(post: PostMetadata) {
         maxWidth: "500px",
       }}
     >
-      <h3>{post.date}</h3>
+      <h3>{post.subtitle}</h3>
       <Link href={`/blog/${post.slug}`}>
         <h4>{post.title}</h4>
-        <p>{post.subtitle}</p>
+        <p>{post.description}</p>
       </Link>
     </div>
   );
