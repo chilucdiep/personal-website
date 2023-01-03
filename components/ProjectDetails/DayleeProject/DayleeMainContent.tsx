@@ -77,8 +77,8 @@ export function DayleeMainContent() {
       <h4>To-do list</h4>
       <p>
         The to-do list is a powerful tool for helping users plan and prioritize
-        their daily tasks. It's a simple and effective way to stay on top of
-        everything that needs to be done.
+        their daily tasks. It&apos;s a simple and effective way to stay on top
+        of everything that needs to be done.
       </p>
       <p>
         To add additional value to the to-do list, the app includes the option
@@ -88,14 +88,14 @@ export function DayleeMainContent() {
         and well-being.
       </p>
       <p>
-        To ensure a seamless user experience, we've implemented the to-do list
-        with the useRef hook. This allows users to add a to-do by pressing the
-        "Enter" key, making it easy and intuitive to use.
+        To ensure a seamless user experience, we&apos;ve implemented the to-do
+        list with the useRef hook. This allows users to add a to-do by pressing
+        the &quot;Enter&quot; key, making it easy and intuitive to use.
       </p>
       <p>
         Overall, the to-do list has a significant impact on the efficiency and
-        productivity of our users. It's a simple but powerful tool that helps
-        them better manage their time and achieve their goals.
+        productivity of our users. It&apos;s a simple but powerful tool that
+        helps them better manage their time and achieve their goals.
       </p>
       <div className={styles.TwoColumnGrid}>
         <Image src={TodoCode} alt="Todo Code" />
