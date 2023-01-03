@@ -1,6 +1,10 @@
 .MainContent {
   margin-bottom: 5em;
 
+  .Full {
+    height: 100%;
+  }
+
   .NoMargin {
     margin: 0 !important;
   }
@@ -14,7 +18,14 @@
 
     img {
       margin: 1em 0;
-      height: 100%;
+    }
+
+    .TwoColumnGrid {
+      @media (min-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
     }
 
     .ThreeColumnGrid {
