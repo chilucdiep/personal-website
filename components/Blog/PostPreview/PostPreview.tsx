@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./PostPreview.module.scss";
-import { PostMetadata } from "../../utils/PostMetadata";
+import { PostMetadata } from "../../../utils/PostMetadata";
 
 export function PostPreview(post: PostMetadata) {
   return (

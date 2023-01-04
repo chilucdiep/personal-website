@@ -2,7 +2,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "../../../utils/getPostMetadata";
-import { BlogPost } from "../../../components/BlogPost";
+import { BlogPost } from "../../../components/Blog/BlogPost";
 
 export default function PostPage(props: any) {
   const slug = props.params.slug;

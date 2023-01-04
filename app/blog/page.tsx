@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PostPreview } from "../../components/PostPreview";
+import { PostPreview } from "../../components/Blog/PostPreview";
 import getPostMetadata from "../../utils/getPostMetadata";
 
 export default function BlogPage() {
