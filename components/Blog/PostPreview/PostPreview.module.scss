@@ -1,8 +1,13 @@
 .PostPreview {
   display: block;
-  padding: 2em 5em;
-  margin-bottom: 10em;
+  padding: 3em 4em;
+  margin-bottom: 4em;
   border: 1px #cacaca solid;
   border-radius: 8px;
   max-width: 500px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    border-color: black;
+  }
 }
