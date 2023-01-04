@@ -100,9 +100,7 @@ export function WorkCard({
       <div className={styles.WorkText}>
         {workInfoMarkup}
         {techMarkup}
-        <Link href={projectUrl} target="_blank">
-          <Button icon={ARROW_ICON} label="View Project" work />
-        </Link>
+        <Button icon={ARROW_ICON} label="View Project" work url={projectUrl} />
       </div>
       {thumbnailMarkup}
     </div>

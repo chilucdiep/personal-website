@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Button.module.scss";
 
 interface Props {
@@ -6,6 +7,7 @@ interface Props {
   icon?: any;
   work?: boolean;
   onClick?(): void;
+  url?: string;
 }
 
 export function Button({
@@ -14,15 +16,21 @@ export function Button({
   icon,
   work = false,
   onClick,
+  url,
 }: Props) {
   const classes = `${styles.Button} ${className} ${
     work ? styles.WorkButton : null
   }`;
 
-  return (
-    <a className={classes} onClick={onClick}>
+  return url ? (
+    <Link className={classes} onClick={onClick} href={url} target="_blank">
       <span>{icon}</span>
       {label}
-    </a>
+    </Link>
+  ) : (
+    <div className={classes} onClick={onClick}>
+      <span>{icon}</span>
+      {label}
+    </div>
   );
 }
