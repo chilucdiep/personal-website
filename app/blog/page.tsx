@@ -12,7 +12,11 @@ export default function BlogPage() {
   return (
     <div>
       <h1>Welcome to my Blog</h1>
-      {postPreviewsMarkup}
+      <div
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2em" }}
+      >
+        {postPreviewsMarkup}
+      </div>
     </div>
   );
 }
