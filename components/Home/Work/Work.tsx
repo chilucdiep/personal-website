@@ -43,7 +43,7 @@ export function Work() {
   );
 
   return (
-    <div className={styles.WorkContainer} name="work-section">
+    <div className={styles.WorkContainer} id="work-section">
       <h1>Cool things I created</h1>
       {filtersMarkup}
       {workMarkup}
