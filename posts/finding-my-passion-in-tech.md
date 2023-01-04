@@ -1,5 +1,5 @@
 ---
-title: "How I Transformed from a Mechanical Engineering Student to a Front-End Engineer"
+title: "How I Transitioned from a Mechanical Engineering Student to a Front-End Engineer"
 description: "The story of my coding journey into tech and software engineering. How I taught myself how to design and code through online ressources and internships."
 subtitle: "Finding My Passion in Tech"
 ---
