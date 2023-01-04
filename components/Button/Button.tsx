@@ -22,15 +22,19 @@ export function Button({
     work ? styles.WorkButton : null
   }`;
 
-  return url ? (
+  const linkButtonMarkup = (
     <Link className={classes} onClick={onClick} href={url} target="_blank">
       <span>{icon}</span>
       {label}
     </Link>
-  ) : (
+  );
+
+  const normalButtonMarkup = (
     <div className={classes} onClick={onClick}>
       <span>{icon}</span>
       {label}
     </div>
   );
+
+  return url ? linkButtonMarkup : normalButtonMarkup;
 }
