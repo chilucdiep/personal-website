@@ -34,7 +34,7 @@ export default function VroomThumbnail() {
               rx="6"
               transform="rotate(-12.0905 295.381 284.393)"
               fill="url(#vroompagepattern)"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
           </g>
           <rect
@@ -61,9 +61,9 @@ export default function VroomThumbnail() {
             width="168.908"
             height="122.062"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

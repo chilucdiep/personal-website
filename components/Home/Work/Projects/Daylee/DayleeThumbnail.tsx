@@ -61,8 +61,8 @@ export default function DayleeThumbnail() {
             y2="236.603"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#8E80F9" />
-            <stop offset="1" stop-color="#BE7BF6" />
+            <stop stopColor="#8E80F9" />
+            <stop offset="1" stopColor="#BE7BF6" />
           </linearGradient>
           <image
             id="image0"

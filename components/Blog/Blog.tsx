@@ -24,11 +24,7 @@ export function Blog() {
     <section className={styles.Blog}>
       {heroMarkup}
       <h4>Recently Published</h4>
-      <div
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2em" }}
-      >
-        {postPreviewsMarkup}
-      </div>
+      <div className={styles.BlogGrid}>{postPreviewsMarkup}</div>
     </section>
   );
 }
