@@ -1,4 +1,4 @@
-import styles from "./DayleeProject.module.scss";
+import styles from "./SpacestagramProject.module.scss";
 import Image from "next/image";
 import { HeroTemplate } from "../ProjectTemplate";
 import DayleeDashboard from "../../../assets/images/ProjectDetails/Daylee/DayleeDashboard.svg";
@@ -7,10 +7,10 @@ import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
 import { DayleeMainContent } from "./DayleeMainContent";
 
-export function DayleeProject() {
+export function SpacestagramProject() {
   const heroMarkup = (
     <HeroTemplate
-      title="Daylee"
+      title="Spacestagram"
       subtitle="The productivity web app where users can utilize various tools and
         widgets such as habit trackers and bullet journaling to organize their
         schedule and life."
