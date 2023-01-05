@@ -1,4 +1,3 @@
-import styles from "./SpacestagramProject.module.scss";
 import Image from "next/image";
 import { HeroTemplate } from "../ProjectTemplate";
 import SpacestagramMockup from "../../../assets/images/ProjectDetails/Spacestagram/SpacestagramMockup.svg";
@@ -10,14 +9,10 @@ export function SpacestagramProject() {
   const heroMarkup = (
     <HeroTemplate
       title="Spacestagram"
-      subtitle="Spacestagram is a web app where space enthousiasts can browse through NASA’s astronomy pictures of the day and save their favorites."
+      subtitle="Spacestagram allows users to discover the wonders of space by browsing through NASA’s astronomy pictures of the day and saving their favorites."
     >
-      <div className={styles.Mockups}>
-        <Image
-          className={styles.DayleeDashboardImg}
-          src={SpacestagramMockup}
-          alt="Spacestagram App"
-        />
+      <div>
+        <Image src={SpacestagramMockup} alt="Spacestagram App" />
       </div>
     </HeroTemplate>
   );
