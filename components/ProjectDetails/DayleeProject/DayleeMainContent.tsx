@@ -112,7 +112,7 @@ export function DayleeMainContent() {
         highly reusable and flexible components, as demonstrated by the custom
         design system I implemented. I also gained valuable experience working
         with time manipulation in JavaScript. As the project continues, I look
-        forward to learning more and improving the app even further
+        forward to learning more and improving the app even further.
       </p>
     </div>
   );
