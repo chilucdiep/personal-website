@@ -11,7 +11,7 @@ import Pomodoro from "../../../assets/images/ProjectDetails/Daylee/Pomodoro.svg"
 import TodoCode from "../../../assets/images/ProjectDetails/Daylee/TodoCode.svg";
 import Todo from "../../../assets/images/ProjectDetails/Daylee/Todo.svg";
 
-export function DayleeMainContent() {
+export function SpacestagramMainContent() {
   const designSystemMarkup = (
     <div className={styles.ContentSection}>
       <h2>Design system</h2>
@@ -119,13 +119,13 @@ export function DayleeMainContent() {
 
   return (
     <MainContent
-      projectBrief="As the lead designer and developer for the Daylee project, I used React to create a comprehensive website and web app that helps students and professionals organize their lives and schedules in one central location. My responsibilities included establishing a design system that ensured a cohesive and consistent look and feel throughout the app, as well as building a landing page and dashboard with a range of productivity tools including a customizable pomodoro timer, habit tracker, and to-do lists. I also implemented various features such as goal setting, gratitude practice and progress updates to help users manage their work, projects, social life, and personal growth in an intuitive and efficient way."
-      problem="Organizing life and schedules can be difficult with the limited options available, including analog methods, scattered productivity tools, or complex software like Notion."
-      goal="Daylee aims to provide users with a simple and intuitive platform that helps them balance their work, projects, social life, and personal growth in one central location. The app offers a comprehensive, all-in-one solution that includes a range of productivity tools and features to support organization and time management"
+      projectBrief="I designed and developed a web application that utilizes an API to access NASA's collection of pictures. Users can browse through the images, read about their context and additional information, and save their favorites. The app also includes a daily update of a new astronomy picture of the day on the feed page."
+      problem="Space enthusiasts often have difficulty finding a reliable source for astronomy information and images. To solve this problem, I created Spacestagram, a web app that allows users to easily browse and learn about space-related images. Spacestagram utilizes clean code and advanced technologies to provide a user-friendly experience for those interested in space exploration."
+      goal="The goal of this project was to build a web application that would allow space enthusiasts to explore and learn more about astronomy. To achieve this, I focused on implementing clean code practices, a scalable file architecture, and cutting-edge technologies such as custom hooks and routing using React Router V6."
     >
-      {designSystemMarkup}
+      {/* {designSystemMarkup}
       {featuresMarkup}
-      {lessonsMarkup}
+      {lessonsMarkup} */}
     </MainContent>
   );
 }

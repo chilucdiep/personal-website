@@ -1,31 +1,22 @@
 import styles from "./SpacestagramProject.module.scss";
 import Image from "next/image";
 import { HeroTemplate } from "../ProjectTemplate";
-import DayleeDashboard from "../../../assets/images/ProjectDetails/Daylee/DayleeDashboard.svg";
-import DayleeLanding from "../../../assets/images/ProjectDetails/Daylee/DayleeLanding.svg";
+import SpacestagramMockup from "../../../assets/images/ProjectDetails/Spacestagram/SpacestagramMockup.svg";
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
-import { DayleeMainContent } from "./DayleeMainContent";
+import { SpacestagramMainContent } from "./SpacestagramMainContent";
 
 export function SpacestagramProject() {
   const heroMarkup = (
     <HeroTemplate
       title="Spacestagram"
-      subtitle="The productivity web app where users can utilize various tools and
-        widgets such as habit trackers and bullet journaling to organize their
-        schedule and life."
+      subtitle="Spacestagram is a web app where space enthousiasts can browse through NASA’s astronomy pictures of the day and save their favorites."
     >
       <div className={styles.Mockups}>
         <Image
           className={styles.DayleeDashboardImg}
-          src={DayleeDashboard}
-          alt="Daylee Dashboard"
-        />
-        <Image
-          src={DayleeLanding}
-          alt="Daylee DayleeLanding"
-          width={480}
-          height={830}
+          src={SpacestagramMockup}
+          alt="Spacestagram App"
         />
       </div>
     </HeroTemplate>
@@ -34,22 +25,21 @@ export function SpacestagramProject() {
   const projectContentMarkup = (
     <ContentTemplate>
       <SidePanel
-        githubLink="https://github.com/Daylee-Digital-Journal/daylee"
-        projectLink="https://daylee-web.herokuapp.com/"
+        githubLink="https://github.com/chilucdiep/Spacestagram"
+        projectLink="https://chilucdiep.github.io/Spacestagram/"
         roles={["Front-End Developer", "Product Designer"]}
-        team={["Back-End Developer"]}
+        team={["-"]}
         techStack={[
           "HTML",
           "Scss",
           "TypeScript",
           "React",
-          "Next.js",
-          "GraphQL",
+          "NASA’s API",
           "Figma",
         ]}
-        date="On going"
+        date="1 week"
       />
-      <DayleeMainContent />
+      <SpacestagramMainContent />
     </ContentTemplate>
   );
 
