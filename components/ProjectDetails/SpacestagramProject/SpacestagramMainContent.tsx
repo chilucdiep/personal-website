@@ -31,14 +31,16 @@ export function SpacestagramMainContent() {
       <h4>Custom hooks</h4>
       <p>
         To enhance the efficiency and scalability of the app, I developed two
-        custom hooks for this project: useFetchPictures and useLocalStorage. The
-        useFetchPictures enables me to easily retrieve and access the pictures
-        from the API within various components of the app.
+        custom hooks for this project: <code>useFetchPictures</code> and{" "}
+        <code>useLocalStorage</code>. The <code>useFetchPictures</code> enables
+        me to easily retrieve and access the pictures from the API within
+        various components of the app.
       </p>
       <p>
-        The useLocalStorage allows users to save their favorite pictures in the
-        local storage for a more seamless experience. These hooks were
-        implemented to streamline the code and improve the user experience.
+        The <code>useLocalStorage</code> allows users to save their favorite
+        pictures in the local storage for a more seamless experience. These
+        hooks were implemented to streamline the code and improve the user
+        experience.
       </p>
       <div className={styles.TwoColumnGrid}>
         <div>
