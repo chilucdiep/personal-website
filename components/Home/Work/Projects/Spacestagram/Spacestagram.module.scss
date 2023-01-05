@@ -1,0 +1,14 @@
+svg {
+  .Pomodoro {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotateZ(-20deg) translate(40px, -15px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .Pomodoro {
+      transform: rotateZ(-12deg) translate(50px, -15px);
+    }
+  }
+}

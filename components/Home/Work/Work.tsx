@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Daylee } from "./Projects/Daylee";
+import { Spacestagram } from "./Projects/Spacestagram";
 import { Vroom } from "./Projects/Vroom";
 import styles from "./Work.module.scss";
 
@@ -39,7 +40,9 @@ export function Work() {
       <Vroom />
     </>
   ) : (
-    <p>other</p>
+    <>
+      <Spacestagram />
+    </>
   );
 
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Daylee.module.scss";
 
 export default function DayleeThumbnail() {
