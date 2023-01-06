@@ -7,12 +7,6 @@ import { EmailButton } from "./EmailButton";
 import Typewriter from "typewriter-effect";
 
 export function Hero() {
-  const words = ["Chi-Luc", "a developer", "a designer"];
-
-  // const typeWriterMarkup = (
-  //   <h1 className="Title">Enhancing Digital Experiences</h1>
-  // );
-
   const typeWriterMarkup = (
     <h3>
       <Typewriter
@@ -23,16 +17,12 @@ export function Hero() {
           delay: 0,
           deleteSpeed: 0,
         }}
-        // onInit={(typewriter) => {
-        //   typewriter.pauseFor(100000000);
-        // }}
       />
     </h3>
   );
 
   const heroTextMarkup = (
     <div className={styles.HeroText}>
-      {/* <h3>Oh hello! 👋 I specialize in</h3> */}
       {typeWriterMarkup}
       <h1 className="Title">Enhancing Digital Experiences</h1>
       <p>
