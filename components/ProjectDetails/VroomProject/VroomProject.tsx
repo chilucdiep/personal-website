@@ -4,16 +4,29 @@ import VroomMockup from "../../../assets/images/ProjectDetails/Vroom/VroomMockup
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
 import { VroomMainContent } from "./VroomMainContent";
+import { motion } from "framer-motion";
 
 export function VroomProject() {
+  const mockupsVariant = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: 0.4,
+      },
+    },
+  };
+
   const heroMarkup = (
     <HeroTemplate
       title="Vroom 2"
       subtitle="Vroom2 is a Slingshot vehicle rental company that provides unique and exhilarating experiences to customers through its website and rental services."
     >
-      <div>
+      <motion.div variants={mockupsVariant} initial="hidden" animate="visible">
         <Image src={VroomMockup} alt="Vroom2 Website Mockups" />
-      </div>
+      </motiondiv>
     </HeroTemplate>
   );
 

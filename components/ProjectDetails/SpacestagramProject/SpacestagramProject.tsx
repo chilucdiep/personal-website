@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export function SpacestagramProject() {
   const mockupsVariant = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 10, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,

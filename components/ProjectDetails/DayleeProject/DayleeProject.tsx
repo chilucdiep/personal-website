@@ -6,8 +6,21 @@ import DayleeLanding from "../../../assets/images/ProjectDetails/Daylee/DayleeLa
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
 import { DayleeMainContent } from "./DayleeMainContent";
+import { motion } from "framer-motion";
 
 export function DayleeProject() {
+  const mockupsVariant = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: 0.4,
+      },
+    },
+  };
+
   const heroMarkup = (
     <HeroTemplate
       title="Daylee"
@@ -15,7 +28,12 @@ export function DayleeProject() {
         widgets such as habit trackers and bullet journaling to organize their
         schedule and life."
     >
-      <div className={styles.Mockups}>
+      <motion.div
+        variants={mockupsVariant}
+        initial="hidden"
+        animate="visible"
+        className={styles.Mockups}
+      >
         <Image
           className={styles.DayleeDashboardImg}
           src={DayleeDashboard}
@@ -27,7 +45,7 @@ export function DayleeProject() {
           width={480}
           height={830}
         />
-      </div>
+      </motion.div>
     </HeroTemplate>
   );
 
