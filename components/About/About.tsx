@@ -1,7 +1,4 @@
 import styles from "./About.module.scss";
-import AboutImg from "../../assets/images/About/AboutImg.png";
-import Image from "next/image";
-import Link from "next/link";
 import { Journey } from "./Journey";
 import { Experience } from "./Experience";
 import { Mission } from "./Mission";
