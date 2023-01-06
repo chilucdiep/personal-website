@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import { ARROW_ICON } from "../../../../assets/constants/icons";
@@ -29,6 +30,17 @@ export function WorkCard({
   isDone = true,
   children,
 }: WorkCardProps) {
+  const workVariant = {
+    hidden: { y: 20, opacity: 1 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  };
+
   const workInfoMarkup = (
     <>
       <h3>{subtitle}</h3>
@@ -96,13 +108,18 @@ export function WorkCard({
   );
 
   return (
-    <div className={side === "left" ? styles.Left : styles.Right}>
+    <motion.div
+      variants={workVariant}
+      initial="hidden"
+      animate="visible"
+      className={side === "left" ? styles.Left : styles.Right}
+    >
       <div className={styles.WorkText}>
         {workInfoMarkup}
         {techMarkup}
         <Button icon={ARROW_ICON} label="View Project" work url={projectUrl} />
       </div>
       {thumbnailMarkup}
-    </div>
+    </motion.div>
   );
 }
