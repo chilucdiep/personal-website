@@ -5,7 +5,7 @@ interface MainContentProps {
   projectBrief: string;
   problem: string;
   goal: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export function MainContent({
