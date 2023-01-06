@@ -1,17 +1,20 @@
+"use client";
+
 import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/images/Logo.svg";
 import styles from "./Navbar.module.scss";
 import { SOCIAL_LINKS } from "../../assets/constants/socialLinks";
+import { motion } from "framer-motion";
 
 export function Navbar() {
   const navLinksMarkup = (
-    <div className={styles.Links}>
+    <motion.div className={styles.Links}>
       <Link href="/#work-section">Work</Link>
       <Link href="/about">About</Link>
       <Link href="/blog">Blog</Link>
-    </div>
+    </motion.div>
   );
 
   const socialLinksMarkup = (

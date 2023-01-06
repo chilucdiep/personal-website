@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "../components/Home/Hero";
 import { Work } from "../components/Home/Work/Work";
 

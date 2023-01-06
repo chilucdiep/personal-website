@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Hero.module.scss";
 import Image from "next/image";
 import HeroImg from "../../../assets/images/Home/Hero/HeroImg.png";
@@ -7,14 +9,32 @@ import Typewriter from "typewriter-effect";
 export function Hero() {
   const words = ["Chi-Luc", "a developer", "a designer"];
 
+  // const typeWriterMarkup = (
+  //   <h1 className="Title">Enhancing Digital Experiences</h1>
+  // );
+
   const typeWriterMarkup = (
-    <h1 className="Title">Enhancing Digital Experiences</h1>
+    <h3>
+      <Typewriter
+        options={{
+          strings: ["Oh hello! 👋", "My name is Chi-Luc", "I specialize in 👇"],
+          autoStart: true,
+          loop: true,
+          delay: 0,
+          deleteSpeed: 0,
+        }}
+        // onInit={(typewriter) => {
+        //   typewriter.pauseFor(100000000);
+        // }}
+      />
+    </h3>
   );
 
   const heroTextMarkup = (
     <div className={styles.HeroText}>
-      <h3>Oh hello! 👋 I specialize in</h3>
+      {/* <h3>Oh hello! 👋 I specialize in</h3> */}
       {typeWriterMarkup}
+      <h1 className="Title">Enhancing Digital Experiences</h1>
       <p>
         My goal is to bridge <span>Front-End Development</span> &{" "}
         <span>Product Design</span> to build beautiful, accessible and
@@ -36,13 +56,6 @@ export function Hero() {
     <section className={styles.Hero}>
       {heroTextMarkup}
       {imgMarkup}
-      {/* <Typewriter
-        options={{
-          strings: ["Hello", "World"],
-          autoStart: true,
-          loop: true,
-        }}
-      /> */}
     </section>
   );
 }
