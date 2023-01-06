@@ -40,8 +40,8 @@ export function Hero() {
           strings: ["I specialize in 👇", "Oh hello! 👋", "My name is Chi-Luc"],
           autoStart: true,
           loop: true,
-          delay: 0,
-          deleteSpeed: 0,
+          delay: 40,
+          deleteSpeed: 30,
         }}
       />
     </h3>
