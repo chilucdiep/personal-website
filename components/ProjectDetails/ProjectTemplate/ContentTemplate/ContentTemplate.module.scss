@@ -4,24 +4,24 @@
   gap: 1em;
   margin-bottom: 3em;
 
-  &::before {
-    content: "";
-    position: absolute;
-    // top: 55em;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 400%;
-    max-height: 3900px;
-    background: linear-gradient(
-      180deg,
-      rgba(246, 247, 254, 0) 0%,
-      #f6f7fe 8%,
-      #f6f7fe 95%,
-      rgba(246, 247, 254, 0) 100%
-    );
-    z-index: -1;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   // top: 55em;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 100vw;
+  //   height: 400%;
+  //   max-height: 3900px;
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(246, 247, 254, 0) 0%,
+  //     #f6f7fe 8%,
+  //     #f6f7fe 95%,
+  //     rgba(246, 247, 254, 0) 100%
+  //   );
+  //   z-index: -1;
+  // }
 
   p {
     margin: 0.5em 0;
