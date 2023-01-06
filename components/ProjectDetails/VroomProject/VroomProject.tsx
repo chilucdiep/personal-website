@@ -9,10 +9,10 @@ export function VroomProject() {
   const heroMarkup = (
     <HeroTemplate
       title="Vroom 2"
-      subtitle="Spacestagram allows users to discover the wonders of space by browsing through NASA’s astronomy pictures of the day and saving their favorites."
+      subtitle="Vroom2 is a Slingshot vehicle rental company that provides unique and exhilarating experiences to customers through its website and rental services."
     >
       <div>
-        <Image src={VroomMockup} alt="Spacestagram App" />
+        <Image src={VroomMockup} alt="Vroom2 Website Mockups" />
       </div>
     </HeroTemplate>
   );
