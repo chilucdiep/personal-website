@@ -26,7 +26,7 @@ export function VroomProject() {
     >
       <motion.div variants={mockupsVariant} initial="hidden" animate="visible">
         <Image src={VroomMockup} alt="Vroom2 Website Mockups" />
-      </motiondiv>
+      </motion.div>
     </HeroTemplate>
   );
 

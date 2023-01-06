@@ -43,6 +43,12 @@
     opacity: 0;
     transition: all 0.5s ease-in-out;
 
+    @media screen and (max-width: 700px) {
+      opacity: 1;
+      left: 100%;
+      // top: 20px;
+    }
+
     .SocialItem {
       background-color: rgba(0, 0, 0, 0.25);
       border: 1px solid rgb(255, 255, 255, 0.1);
