@@ -31,10 +31,9 @@ export function WorkCard({
   children,
 }: WorkCardProps) {
   const workVariant = {
-    hidden: { y: 20, opacity: 1 },
+    hidden: { y: 30 },
     visible: {
       y: 0,
-      opacity: 1,
       transition: {
         duration: 0.4,
       },

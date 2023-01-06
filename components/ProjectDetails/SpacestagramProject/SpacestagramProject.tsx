@@ -4,16 +4,29 @@ import SpacestagramMockup from "../../../assets/images/ProjectDetails/Spacestagr
 import { ContentTemplate } from "../ProjectTemplate/ContentTemplate";
 import { SidePanel } from "../ProjectTemplate/ContentTemplate/SidePanel";
 import { SpacestagramMainContent } from "./SpacestagramMainContent";
+import { motion } from "framer-motion";
 
 export function SpacestagramProject() {
+  const mockupsVariant = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: 0.4,
+      },
+    },
+  };
+
   const heroMarkup = (
     <HeroTemplate
       title="Spacestagram"
       subtitle="Spacestagram allows users to discover the wonders of space by browsing through NASA’s astronomy pictures of the day and saving their favorites."
     >
-      <div>
+      <motion.div variants={mockupsVariant} initial="hidden" animate="visible">
         <Image src={SpacestagramMockup} alt="Spacestagram App" />
-      </div>
+      </motion.div>
     </HeroTemplate>
   );
 
