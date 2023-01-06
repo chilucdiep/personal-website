@@ -46,7 +46,8 @@
     @media screen and (max-width: 700px) {
       opacity: 1;
       left: 100%;
-      // top: 20px;
+      flex-direction: column;
+      top: 20%;
     }
 
     .SocialItem {
@@ -95,5 +96,9 @@
 .Right {
   .Overlay {
     left: 40%;
+
+    @media screen and (max-width: 700px) {
+      left: 100%;
+    }
   }
 }
