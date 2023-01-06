@@ -9,8 +9,25 @@ import { SOCIAL_LINKS } from "../../assets/constants/socialLinks";
 import { motion } from "framer-motion";
 
 export function Navbar() {
+  const textVariant = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 1.2,
+        duration: 0.4,
+      },
+    },
+  };
+
   const navLinksMarkup = (
-    <motion.div className={styles.Links}>
+    <motion.div
+      className={styles.Links}
+      variants={textVariant}
+      initial="hidden"
+      animate="visible"
+    >
       <Link href="/#work-section">Work</Link>
       <Link href="/about">About</Link>
       <Link href="/blog">Blog</Link>
@@ -18,7 +35,12 @@ export function Navbar() {
   );
 
   const socialLinksMarkup = (
-    <div className={styles.SocialLinks}>
+    <motion.div
+      className={styles.SocialLinks}
+      variants={textVariant}
+      initial="hidden"
+      animate="visible"
+    >
       <SocialIcon
         bgColor="transparent"
         fgColor="black"
@@ -39,15 +61,16 @@ export function Navbar() {
         url={SOCIAL_LINKS.EMAIL}
         className={styles.SocialItem}
       />
-    </div>
+    </motion.div>
   );
 
   const svgVariant = {
-    hidden: { rotate: -180, opacity: 0 },
+    hidden: { rotate: -180, scale: 1.2, opacity: 0 },
     visible: {
       rotate: 0,
+      scale: 1,
       opacity: 1,
-      transition: { duration: 1, delayChildren: 0.8 },
+      transition: { duration: 1.2, type: "spring", delayChildren: 0.8 },
     },
   };
 
@@ -55,7 +78,7 @@ export function Navbar() {
     hidden: { rotate: 100 },
     visible: {
       rotate: 0,
-      transition: { duration: 1, type: "spring" },
+      transition: { duration: 0.7, type: "spring" },
     },
   };
 
