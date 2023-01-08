@@ -13,4 +13,10 @@
     max-width: 40em;
     margin-bottom: 6em;
   }
+
+  @media screen and (max-width: 700px) {
+    img {
+      height: auto;
+    }
+  }
 }
