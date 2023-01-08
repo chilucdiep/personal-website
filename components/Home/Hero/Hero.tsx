@@ -6,7 +6,6 @@ import HeroImg from "../../../assets/images/Home/Hero/HeroImg.png";
 import { EmailButton } from "./EmailButton";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-import { duration } from "@mui/material";
 
 export function Hero() {
   const textVariant = {

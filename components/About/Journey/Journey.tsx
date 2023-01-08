@@ -1,12 +1,26 @@
+"use client";
+
 import styles from "./Journey.module.scss";
 import AboutImg from "../../../assets/images/About/AboutImg.png";
 import Image from "next/image";
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 export function Journey() {
+  const typewriterMarkup = (
+    <Typewriter
+      options={{
+        strings: "As a passionate self-taught",
+        autoStart: true,
+        delay: 40,
+        cursor: "",
+      }}
+    />
+  );
+
   const textMarkup = (
     <div className={styles.AboutText}>
-      <h3>As a passionate self-taught</h3>
+      <h3>{typewriterMarkup}</h3>
       <h2>My journey in tech</h2>
       <p>
         My name is Chi-Luc and I am a Software Developer based in 📍 Montreal,
