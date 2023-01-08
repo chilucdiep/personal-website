@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./Journey.module.scss";
 import AboutImg from "../../../assets/images/About/AboutImg.png";
 import Image from "next/image";

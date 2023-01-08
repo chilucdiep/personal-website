@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import { ARROW_ICON } from "../../../../assets/constants/icons";
 import { Button } from "../../../Button";
+import Typewriter from "typewriter-effect";
 import styles from "./WorkCard.module.scss";
 
 interface WorkCardProps {
@@ -40,9 +40,20 @@ export function WorkCard({
     },
   };
 
+  const typewriterMarkup = (
+    <Typewriter
+      options={{
+        strings: subtitle,
+        autoStart: true,
+        delay: 40,
+        cursor: "",
+      }}
+    />
+  );
+
   const workInfoMarkup = (
     <>
-      <h3>{subtitle}</h3>
+      <h3>{typewriterMarkup}</h3>
       <h2>{title}</h2>
       <p>
         {description} {!isDone ? <strong>**Under Construction**</strong> : null}

@@ -1,12 +1,24 @@
 import styles from "./Mission.module.scss";
 import MissionImg from "../../../assets/images/About/MissionImg.png";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
 import { values, IValue } from "./valuesList";
 
 export function Mission() {
+  const typewriterMarkup = (
+    <Typewriter
+      options={{
+        strings: "What is important to me",
+        autoStart: true,
+        delay: 40,
+        cursor: "",
+      }}
+    />
+  );
+
   const headerMarkup = (
     <>
-      <h3>What is important to me</h3>
+      <h3>{typewriterMarkup}</h3>
       <h2>
         My mission is to <span>empower people</span> through user-centered
         software
