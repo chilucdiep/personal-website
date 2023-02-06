@@ -9,9 +9,9 @@ export function Blog() {
     <section className={styles.Hero}>
       <h1 className="Title">Welcome to my Blog!</h1>
       <p>
-        Here, I share through my writing my experience as a front-end engineer
-        and everything I&apos;m learning on CSS, React, Typescript, design
-        thinking and more.
+        Sharing through writing my experience as a front-end engineer and
+        everything I&apos;m learning on CSS, React, Typescript, design thinking
+        and more.
       </p>
     </section>
   );

@@ -28,7 +28,7 @@ export function Navbar() {
       initial="hidden"
       animate="visible"
     >
-      <Link href="/#work-section">Work</Link>
+      <a href="/#work-section">Work</a>
       <Link href="/about">About</Link>
       <Link href="/blog">Blog</Link>
     </motion.div>
