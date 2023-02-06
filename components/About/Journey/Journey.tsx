@@ -1,5 +1,6 @@
 import styles from "./Journey.module.scss";
 import AboutImgg from "../../../assets/images/About/AboutImgg.png";
+import AboutImg1 from "../../../assets/images/About/AboutImg1.png";
 import Image from "next/image";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
@@ -12,7 +13,6 @@ export function Journey() {
       x: 0,
       opacity: 1,
       transition: {
-        delay: 1,
         duration: 0.4,
       },
     },
@@ -74,7 +74,7 @@ export function Journey() {
       <motion.div variants={imgVariant} initial="hidden" animate="visible">
         <Image
           className={styles.AboutImg}
-          src={AboutImgg}
+          src={AboutImg1}
           alt="Profile About"
         />
       </motion.div>
