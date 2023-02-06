@@ -1,6 +1,7 @@
 .Journey {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
   margin: 2em 0 3em;
 
@@ -25,7 +26,7 @@
 
   .AboutText {
     max-width: 540px;
-    margin-left: 4.5em;
+    margin-right: 4.5em;
 
     p {
       font-size: 0.8rem;
