@@ -1,5 +1,5 @@
 import styles from "./Journey.module.scss";
-import AboutImg from "../../../assets/images/About/AboutImg.png";
+import AboutImgg from "../../../assets/images/About/AboutImgg.png";
 import Image from "next/image";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
@@ -58,7 +58,7 @@ export function Journey() {
 
   return (
     <div className={styles.Journey}>
-      <Image className={styles.AboutImg} src={AboutImg} alt="Profile About" />
+      <Image className={styles.AboutImg} src={AboutImgg} alt="Profile About" />
       {textMarkup}
     </div>
   );
