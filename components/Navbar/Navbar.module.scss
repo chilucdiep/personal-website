@@ -1,7 +1,24 @@
+.Sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
 .Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1300px;
+  padding: 0.6em 1.5em;
+  margin: auto;
+
+  @media screen and (min-width: 1050px) {
+    padding: 0.4em 8em;
+  }
 
   .Links {
     display: flex;
