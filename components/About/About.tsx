@@ -9,7 +9,7 @@ export function About() {
       <h1 className="Title">A quick blurb about me</h1>
       <p>
         I am a driven, curious and detail-oriented front-end developer with
-        experience in startups environment. 🚀
+        experience in startup environments. 🚀
       </p>
     </section>
   );
