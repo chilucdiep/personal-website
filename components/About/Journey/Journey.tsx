@@ -3,8 +3,21 @@ import AboutImgg from "../../../assets/images/About/AboutImgg.png";
 import Image from "next/image";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 export function Journey() {
+  const imgVariant = {
+    hidden: { x: 10, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: 0.4,
+      },
+    },
+  };
+
   const typewriterMarkup = (
     <Typewriter
       options={{
@@ -58,7 +71,13 @@ export function Journey() {
 
   return (
     <div className={styles.Journey}>
-      <Image className={styles.AboutImg} src={AboutImgg} alt="Profile About" />
+      <motion.div variants={imgVariant} initial="hidden" animate="visible">
+        <Image
+          className={styles.AboutImg}
+          src={AboutImgg}
+          alt="Profile About"
+        />
+      </motion.div>
       {textMarkup}
     </div>
   );
