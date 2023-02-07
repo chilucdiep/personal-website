@@ -1,14 +1,17 @@
 "use client";
 
 import { SocialIcon } from "react-social-icons";
-import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../assets/images/Logo.svg";
 import styles from "./Navbar.module.scss";
 import { SOCIAL_LINKS } from "../../assets/constants/socialLinks";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
+  const path = usePathname();
+
+  console.log(path);
+
   const textVariant = {
     hidden: {
       y: 10,
@@ -31,9 +34,15 @@ export function Navbar() {
       initial="hidden"
       animate="visible"
     >
-      <a href="/#work-section">Work</a>
-      <Link href="/about">About</Link>
-      <Link href="/blog">Blog</Link>
+      <a href="/#work-section" className={path === "/" ? styles.Bold : ""}>
+        Work
+      </a>
+      <Link href="/about" className={path === "/about" ? styles.Bold : ""}>
+        About
+      </Link>
+      <Link href="/blog" className={path === "/blog" ? styles.Bold : ""}>
+        Blog
+      </Link>
     </motion.div>
   );
 
