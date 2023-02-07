@@ -10,8 +10,6 @@ import { usePathname } from "next/navigation";
 export function Navbar() {
   const path = usePathname();
 
-  console.log(path);
-
   const textVariant = {
     hidden: {
       y: 10,

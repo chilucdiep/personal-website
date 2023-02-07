@@ -34,7 +34,7 @@ export function Experience() {
     <>
       {skillsMarkup}
       {experienceMarkup}
-      <Image src={Wave} alt="Wave Separator" />
+      <Image src={Wave} alt="Wave Separator" style={{ height: "auto" }} />
     </>
   );
 }
