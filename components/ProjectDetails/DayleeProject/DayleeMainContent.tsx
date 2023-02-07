@@ -10,6 +10,10 @@ import PomodoroCode from "../../../assets/images/ProjectDetails/Daylee/PomodoroC
 import Pomodoro from "../../../assets/images/ProjectDetails/Daylee/Pomodoro.svg";
 import TodoCode from "../../../assets/images/ProjectDetails/Daylee/TodoCode.svg";
 import Todo from "../../../assets/images/ProjectDetails/Daylee/Todo.svg";
+import VroomThumbnail from "../../../assets/images/PageThumbnails/VroomThumbnail.svg";
+import SpacestagramThumbnail from "../../../assets/images/PageThumbnails/SpacestagramThumbnail.svg";
+import { LinkTemplate } from "../ProjectTemplate/ContentTemplate/LinksTemplate";
+import { ILink } from "../ProjectTemplate/ContentTemplate/LinksTemplate/Links.constant";
 
 export function DayleeMainContent() {
   const designSystemMarkup = (
@@ -117,6 +121,13 @@ export function DayleeMainContent() {
     </div>
   );
 
+  const links: ILink[] = [
+    { href: "/vroom", src: VroomThumbnail },
+    { href: "/spacestagram", src: SpacestagramThumbnail },
+  ];
+
+  const linksMarkup = <LinkTemplate links={links} />;
+
   return (
     <MainContent
       projectBrief="As lead designer and developer for the Daylee project, I created a comprehensive web app to help students and professionals organize their lives and schedules. My responsibilities included establishing a design system, building a landing page and dashboard with productivity tools like a customizable pomodoro timer and habit tracker, and adding features like gratitude practice. The app was designed to provide an easy and intuitive way for users to manage their various responsibilities."
@@ -126,6 +137,7 @@ export function DayleeMainContent() {
       {designSystemMarkup}
       {featuresMarkup}
       {lessonsMarkup}
+      {linksMarkup}
     </MainContent>
   );
 }

@@ -7,6 +7,10 @@ import DetailspageSpaceImg from "../../../assets/images/ProjectDetails/Spacestag
 import FeedPageComponentImg from "../../../assets/images/ProjectDetails/Spacestagram/FeedPageComponentImg.svg";
 import useFetchPicturesImg from "../../../assets/images/ProjectDetails/Spacestagram/useFetchPicturesImg.svg";
 import useLocalStorageImg from "../../../assets/images/ProjectDetails/Spacestagram/useLocalStorageImg.svg";
+import { ILink } from "../ProjectTemplate/ContentTemplate/LinksTemplate/Links.constant";
+import { LinkTemplate } from "../ProjectTemplate/ContentTemplate/LinksTemplate";
+import VroomThumbnail from "../../../assets/images/PageThumbnails/VroomThumbnail.svg";
+import DayleeThumbnail from "../../../assets/images/PageThumbnails/DayleeThumbnail.svg";
 
 export function SpacestagramMainContent() {
   const pagesMarkup = (
@@ -153,6 +157,13 @@ export function SpacestagramMainContent() {
     </div>
   );
 
+  const links: ILink[] = [
+    { href: "/daylee", src: DayleeThumbnail },
+    { href: "/vroom", src: VroomThumbnail },
+  ];
+
+  const linksMarkup = <LinkTemplate links={links} />;
+
   return (
     <MainContent
       projectBrief="I designed and developed a web application that utilizes an API to access NASA's collection of pictures. Users can browse through the images, read about their context and additional information, and save their favorites. The app also includes a daily update of a new astronomy picture of the day on the feed page."
@@ -161,6 +172,7 @@ export function SpacestagramMainContent() {
     >
       {featuresMarkup}
       {lessonsMarkup}
+      {linksMarkup}
     </MainContent>
   );
 }

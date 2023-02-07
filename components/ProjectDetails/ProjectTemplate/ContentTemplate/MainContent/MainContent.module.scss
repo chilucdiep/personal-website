@@ -26,27 +26,28 @@
       margin-left: 2em;
     }
 
-    .TwoColumnGrid {
-      @media (min-width: 700px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
-      }
+    img {
+      margin: 0;
     }
+  }
 
-    .ThreeColumnGrid {
-      margin: 2em 0;
+  .TwoColumnGrid {
+    @media (min-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      gap: 2em;
+    }
+  }
 
-      @media (min-width: 700px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: start;
-        gap: 2em;
-      }
+  .ThreeColumnGrid {
+    margin: 2em 0;
 
-      img {
-        margin: 0;
-      }
+    @media (min-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: start;
+      gap: 2em;
     }
   }
 }

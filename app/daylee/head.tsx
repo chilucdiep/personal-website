@@ -7,7 +7,7 @@ export default function Head() {
       <link rel="icon" href="/favicon.svg" />
       <meta
         property="og:image"
-        content="https://raw.githubusercontent.com/chilucdiep/personal-website/main/assets/images/PageThumbnails/DayleeThumbail.svg"
+        content="https://raw.githubusercontent.com/chilucdiep/personal-website/main/assets/images/PageThumbnails/DayleeThumbnail.svg"
       />
     </>
   );
