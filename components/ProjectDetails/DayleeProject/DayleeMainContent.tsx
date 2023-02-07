@@ -111,8 +111,8 @@ export function DayleeMainContent() {
         Through building the Daylee app, I learned the importance of creating
         highly reusable and flexible components, as demonstrated by the custom
         design system I implemented. I also gained valuable experience working
-        with time manipulation in JavaScript. As the project continues, I look
-        forward to learning more and improving the app even further.
+        with time and date manipulation in JavaScript. As the project continues,
+        I look forward to learning more and improving the app even further.
       </p>
     </div>
   );
