@@ -14,8 +14,7 @@ export function Hero() {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1.5,
-        duration: 0.4,
+        duration: 0.2,
       },
     },
   };
@@ -26,8 +25,8 @@ export function Hero() {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1.2,
-        duration: 0.4,
+        delay: 0.2,
+        duration: 0.3,
       },
     },
   };
@@ -70,6 +69,7 @@ export function Hero() {
         src={HeroImg}
         alt="Clay Tech Illustration"
         className={styles.HeroImg}
+        priority
         width={60000}
         height={8000}
       />

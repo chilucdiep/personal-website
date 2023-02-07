@@ -75,6 +75,7 @@ export function Journey() {
         <Image
           className={styles.AboutImg}
           src={AboutImg1}
+          priority
           alt="Profile About"
         />
       </motion.div>

@@ -19,8 +19,7 @@ export function Navbar() {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 0.2,
-        duration: 0.4,
+        duration: 0.2,
       },
     },
   };
@@ -80,7 +79,12 @@ export function Navbar() {
       rotate: 0,
       scale: 1,
       opacity: 1,
-      transition: { duration: 1.2, type: "spring", delayChildren: 0.8 },
+      transition: {
+        delay: 0.8,
+        duration: 1.2,
+        type: "spring",
+        delayChildren: 1.5,
+      },
     },
   };
 
@@ -88,7 +92,10 @@ export function Navbar() {
     hidden: { rotate: 100 },
     visible: {
       rotate: 0,
-      transition: { duration: 0.7, type: "spring" },
+      transition: {
+        duration: 0.7,
+        type: "spring",
+      },
     },
   };
 

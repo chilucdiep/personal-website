@@ -8,12 +8,11 @@ import { motion } from "framer-motion";
 
 export function VroomProject() {
   const mockupsVariant = {
-    hidden: { y: 10, opacity: 0 },
+    hidden: { y: 35, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1,
         duration: 0.4,
       },
     },
