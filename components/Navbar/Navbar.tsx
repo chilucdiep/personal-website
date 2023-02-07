@@ -12,14 +12,14 @@ export function Navbar() {
 
   const textVariant = {
     hidden: {
-      y: 10,
+      y: 8,
       opacity: 0,
     },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.2,
+        duration: 0.15,
       },
     },
   };
