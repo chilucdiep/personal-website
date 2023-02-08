@@ -113,10 +113,14 @@ export function Navbar() {
       <nav className={styles.Navbar}>
         <motion.div
           whileHover={{
-            scale: 0.965,
+            scale: 1.01,
             transition: {
               duration: 0.4,
               type: "spring",
+              damping: 12,
+              stiffness: 500,
+              restDelta: 0.000001,
+              velocity: 3,
             },
           }}
         >
