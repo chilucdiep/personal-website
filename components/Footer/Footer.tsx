@@ -42,15 +42,15 @@ export function Footer() {
   return (
     <footer className={styles.Footer}>
       {socialLinksMarkup}
-      <div className={styles.ok}>
+      <div className={styles.Copyright}>
         <Image src={Logo} alt="Logo" />
         <p>
-          <strong>Chi-Luc Diep &copy; 2023</strong> &mdash;{" "}
+          <strong>Chi-Luc Diep &copy; 2023 </strong>
           <Link
             href="https://github.com/chilucdiep/personal-website"
             target="_blank"
           >
-            Design and development by me!
+            &mdash; Design and development by me!
           </Link>
         </p>
       </div>

@@ -23,7 +23,7 @@
     }
   }
 
-  .ok {
+  .Copyright {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -38,6 +38,10 @@
 
       &:hover {
         opacity: 0.8;
+      }
+
+      @media screen and (max-width: 700px) {
+        display: none;
       }
     }
   }
