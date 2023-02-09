@@ -2,6 +2,8 @@ import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import styles from "./Footer.module.scss";
 import { SOCIAL_LINKS } from "../../assets/constants/socialLinks";
+import Image from "next/image";
+import Logo from "../../public/favicon.svg";
 
 export function Footer() {
   const navLinksMarkup = (
@@ -40,7 +42,18 @@ export function Footer() {
   return (
     <footer className={styles.Footer}>
       {socialLinksMarkup}
-      <p>Designed and built by me!</p>
+      <div className={styles.ok}>
+        <Image src={Logo} alt="Logo" />
+        <p>
+          <strong>Chi-Luc Diep &copy; 2023</strong> &mdash;{" "}
+          <Link
+            href="https://github.com/chilucdiep/personal-website"
+            target="_blank"
+          >
+            Design and development by me!
+          </Link>
+        </p>
+      </div>
     </footer>
   );
 }
