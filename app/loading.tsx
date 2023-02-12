@@ -1,7 +1,9 @@
-export default function Loading() {
-  return (
-    <div style={{ height: "100vh", display: "grid", placeItems: "center" }}>
-      Page loading, please stay put :&#41;
-    </div>
-  );
-}
+// Will explore this idea further later on
+
+// export default function Loading() {
+//   return (
+//     <div style={{ height: "100vh", display: "grid", placeItems: "center" }}>
+//       Page loading, please stay put :&#41;
+//     </div>
+//   );
+// }
