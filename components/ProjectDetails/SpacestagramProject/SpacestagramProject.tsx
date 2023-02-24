@@ -34,7 +34,7 @@ export function SpacestagramProject() {
     <ContentTemplate>
       <SidePanel
         githubLink="https://github.com/chilucdiep/Spacestagram"
-        projectLink="https://chilucdiep.github.io/Spacestagram/"
+        projectLink="https://spacestagram-ten-sigma.vercel.app/"
         roles={["Front-End Developer", "Product Designer"]}
         team={["-"]}
         techStack={[
