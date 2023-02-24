@@ -13,7 +13,7 @@ export function Spacestagram() {
       NASA APOD's API to display the pictures and information."
       tech="TypeScript, React, Scss"
       projectUrl="/spacestagram"
-      figmaUrl="https://www.figma.com/file/dkV2MEJPPmGWdl1vvfaPs4/Spacestagram?node-id=0%3A1"
+      figmaUrl="https://chilucdiep.github.io/Spacestagram/"
       githubUrl="https://github.com/chilucdiep/Spacestagram"
     >
       <SpacestagramThumbnail />

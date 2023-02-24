@@ -14,7 +14,7 @@ export function Vroom() {
         it in design and implementing it for deployment."
       tech="TypeScript, React, Next.js, Scss"
       projectUrl="/vroom"
-      figmaUrl="https://www.figma.com/file/VvflnQx7wd5uHKjcEVxGSs/Vroom-2?node-id=779%3A33"
+      figmaUrl="https://www.vroom2.ca/"
       githubUrl="https://github.com/chilucdiep/vroom2"
     >
       <VroomThumbnail />
