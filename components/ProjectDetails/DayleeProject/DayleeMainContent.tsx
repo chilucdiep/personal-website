@@ -123,7 +123,7 @@ export function DayleeMainContent() {
 
   const links: ILink[] = [
     { href: "/vroom", src: VroomThumbnail },
-    { href: "/spacestagram", src: SpacestagramThumbnail },
+    { href: "/spacetr", src: SpacestagramThumbnail },
   ];
 
   const linksMarkup = <LinkTemplate links={links} />;

@@ -7,7 +7,7 @@ import SpacestagramThumbnail from "../../../assets/images/PageThumbnails/Spacest
 export function VroomMainContent() {
   const links: ILink[] = [
     { href: "/daylee", src: DayleeThumbnail },
-    { href: "/spacestagram", src: SpacestagramThumbnail },
+    { href: "/spacetr", src: SpacestagramThumbnail },
   ];
 
   const linksMarkup = <LinkTemplate links={links} />;

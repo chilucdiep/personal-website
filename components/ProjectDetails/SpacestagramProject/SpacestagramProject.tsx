@@ -21,11 +21,11 @@ export function SpacestagramProject() {
 
   const heroMarkup = (
     <HeroTemplate
-      title="Spacestagram"
-      subtitle="Spacestagram allows users to discover the wonders of space by browsing through NASA’s astronomy pictures of the day and saving their favorites."
+      title="Spacetr"
+      subtitle="Spacetr allows users to discover the wonders of space by browsing through NASA’s astronomy pictures of the day and saving their favorites."
     >
       <motion.div variants={mockupsVariant} initial="hidden" animate="visible">
-        <Image src={SpacestagramMockup} alt="Spacestagram App" />
+        <Image src={SpacestagramMockup} alt="Spacetr App" />
       </motion.div>
     </HeroTemplate>
   );
