@@ -5,7 +5,8 @@
   p,
   a,
   li {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-inter);
+    font-weight: 400;
     font-size: 1.25rem;
   }
 
@@ -29,7 +30,6 @@
   }
 
   li {
-    font-size: 1rem;
     font-weight: 300;
     margin: 0 0 1em 1em;
     opacity: 0.8;

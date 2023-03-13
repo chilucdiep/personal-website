@@ -1,11 +1,17 @@
 "use client";
 
-import { Poppins } from "@next/font/google";
+import { DM_Sans, Poppins } from "@next/font/google";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import "./globals.scss";
 
 const poppins = Poppins({ weight: ["300", "500", "600"], subsets: ["latin"] });
+
+const dm = DM_Sans({
+  variable: "--font-inter",
+  style: ["normal", "italic"],
+  weight: ["400", "500", "700"],
+});
 
 export default function RootLayout({
   children,
@@ -13,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={`${poppins.className}  ${dm.variable}`}>
       <head />
       <body>
         <Navbar />
