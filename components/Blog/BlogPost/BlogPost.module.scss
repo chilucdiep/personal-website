@@ -1,15 +1,24 @@
 .BlogPost {
-  max-width: 780px;
+  max-width: 75ch;
   margin: 4em auto;
 
-  p {
-    font-size: 1rem;
+  p,
+  a,
+  li {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.25rem;
+  }
+
+  a {
+    color: var(--mainColor);
+    font-weight: 500;
   }
 
   .TitleSection {
     margin-bottom: 4em;
 
     h1 {
+      font-size: 2.5rem;
       margin: 0.5em 0 0;
     }
 
