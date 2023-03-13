@@ -1,0 +1,88 @@
+---
+title: "From Concept to Launch: My 7-Day Journey of Building a Full-Stack App as a Front-End Developer"
+description: "I built a full-stack web app called LaNote, which allows users to send a digital Do You Like Me? note to their crush. I mapped out the user flow, designed and prototyped, and built out the front-end and back-end."
+subtitle: "Building a web app from scratch"
+date: "March 12, 2023"
+timeToRead: "6 minutes read"
+---
+
+Do you remember the days of passing notes to your crush in school? The anticipation of their response, the thrill of the unknown...it was all part of the fun. Well, with the help of modern technology, you can relive that feeling and up your _rizz_ with a more creative and playful approach.
+
+That's the concept behind LaNote, a "Do You Like Me?" note app that allows users to send a digital note to their special person. The idea came from group conversation I had with friends about the uncertainties of modern dating and how much easier it would be if they could just pass a note to their crush.
+
+As a frontend developer, I decided to take on the challenge of building this full-stack web app in just seven days. My goal was to go through the whole product lifecycle, including research, design, development, launch, all within a limited time frame. Here’s a recap on how it went.
+
+## Day 1: Mapping Out the User Flow
+
+Before jumping into design and development, I spent some time mapping out the user flow, features, and different pages of the app. I also consulted with ChatGPT to make sure I wasn't missing anything important. It was essential to have a clear plan before moving forward. After debating on different possibilities, I settled on this user flow:
+
+1. The original user goes to the website, enters their crush's name, and generates a unique URL.
+2. They then share that URL with their crush, who clicks on it to see the digital "Do you like me?" note with three checkboxes for yes, no, or maybe.
+3. The recipient can check one of the boxes and submit their response, with a temporary confirmation message appearing before disappearing after a few seconds. The recipient can always change their answer and re-submit.
+4. The original user then receives a real-time response while being on the URL. No need to refresh the page, which allows a more intuitive user experience.
+
+The fun twist comes from the fact that this app takes the concept of note-passing and brings it into the digital age. No more unoriginal flirting on Instagram or dating apps, just a simple and cute way of showing interest. And with real-time updates using web sockets, the original user can see their crush's response almost instantly.
+
+## Day 2: Designing and Prototyping
+
+With the user flow in place, I dived into the design process. I spent a lot of time experimenting with different layouts, color schemes, and typography to create a brand identity that would feel both heartwarming and playful.
+
+This was particularly challenging for me as I don't have a background in graphic design. It was really fun to step out of my comfort zone and bring the "ripped note paper" concept to life in a digital setting. It allowed me to learn new techniques and gain a better understanding of how design elements can work together to create a cohesive look and feel.
+
+Once I had a clear idea of the design direction I wanted to go in, I created wireframes and a quick prototype using Figma. To ensure the app and flow was intuitive and user-friendly, I tested the prototype with a few friends. This gave me valuable feedback for things like confirmation messages to guide the user, and allowed me to make necessary tweaks to the design.
+
+## Day 3: Planning the Tech Stack and Set Up the Front-End
+
+I began the development process by planning and researching the appropriate technology stack that would be needed to build the application. Since I am a frontend developer, my priority was to find solutions that would be accessible for me to implement.
+
+After careful consideration, I decided to use TypeScript and Next.js for the frontend, Prisma and Supabase for the backend. I opted for Prisma and Supabase due to their seamless integration with Next.js, which made it easy for me to build a full-stack application as a frontend developer. I also chose [Socket.io](http://socket.io/) for real-time updates.
+
+Once everything was decided, I began building the basis of the frontend UI. I made sure to implement the functionalities that could be done before setting up the database to ensure a smooth integration. These included setting up the unique note identifier generator using uuid and dynamic routing for each note. My main goal was to ensure that the integration with the backend would be smooth and efficient.
+
+## Day 4: Setting Up the Back-End
+
+On Day 4, I faced the challenge of setting up the server for my app. The backend was uncharted territory for me, and I felt intimidated by the task. However, by approaching it step by step and after some research and trial and error, I successfully integrated Prisma and Supabase with Next.js.
+
+It was pretty tough to find resources or examples of Prisma's implementation with Next.js 13, as this version was still in beta. After setting up everything, I built out the necessary functionality for creating, updating, and retrieving notes with the POST, PATCH, and GET methods.
+
+Overall, setting up the backend was a bit daunting at first, but I was able to make it work. It was a great learning experience for me, and I feel excited to continue to building a good foundation in full-stack development.
+
+## Day 5: Cleaning up the Front-End
+
+My main focus was to give attention to every detail of the interface and ensure everything was pixel-perfect. I took a detail-oriented approach to cleaning up the frontend and making it fully responsive.
+
+From the layout to the micro user interactions, I went through every element to ensure the user experience was seamless and visually appealing. The end result was a polished and refined interface that guides the user through the flow, providing an easy, clear and intuitive experience.
+
+In addition, I worked on setting up and linking the whole full-stack functionality. This involved connecting the front-end to the back-end using API routes, and ensuring that data was properly fetched and updated.
+
+## Day 6: Implementing Animations and Web Sockets
+
+I decided to add some extra flair to the app by implementing animations and user interactions. This is always something I find fun to do.
+
+However, my main focus for that day was setting up websockets for a real-time response from recipient to the original user. As a first-time experience with websockets and S**[ocket.io](http://socket.io/)**, it was a bit intimidating at first.
+
+After research and trial and error, I realized that Serverless Functions on Vercel are stateless and have a maximum execution duration. As a result, it is not possible to maintain a WebSocket connection to a Serverless Function.
+
+Since I was pretty tight on time and did not have time to embark on a whole new journey of implementing real-time response. Instead, I decided to I decided to adjust the user flow by adding a confirmation message when the original user generates a note, informing them of how they should proceed with the next steps.
+
+The message reads: "_Your note has been generated! Now, simply share this link with your crush. Once they submit their answer, you'll be able to view it using the same link. Don't forget to refresh the page to see the latest response._"
+
+I learned that encountering obstacles and making mistakes while working on a project is a normal part of the development process. It's important to be adaptable and pivot quickly to new solutions when faced with challenges. In this case, I was able to pivot my approach and still deliver a functional and satisfying user experience. By doing so, I was able to save time and simplify the development process.
+
+## Day 7: Preparing for Launch
+
+On the final day of my challenge, I focused on preparing the app for launch. I made sure that there were no lingering issues or weird use cases that could affect the user experience. Then, I deployed my website on Vercel, which makes deployment and hosting experience so easy and developer-friendly. Additionally, I documented my entire process, from the initial planning phase to the final implementation, so that others could learn from my experience.
+
+With everything set and ready to go, I launched the app into the world. I shared it on social media and other relevant platforms, hoping to gain some traction and attract users. I also reached out to people in my network and asked for their feedback and suggestions on how to improve the app.
+
+I believe that launching an app is just the beginning, and that continued updates and improvements are crucial for its success. I plan on continuing to gather feedback and make improvements to the app based on that feedback, ensuring that it remains relevant and useful to its users.
+
+## **Conclusion**
+
+Building LaNote was an incredible experience, and it allowed me to learn a lot about full-stack development. The process was challenging, but it was also incredibly rewarding to see the project come to life and to receive positive feedback from users.
+
+Overall, I learned that careful planning and attention to detail are critical to building a successful application. From mapping out the user flow to testing and quality assurance, every step of the process is important and requires attention and care.
+
+I also learned that stepping out of my comfort zone and learning new technologies and skills can be really fun. By taking on this project, I was able to expand my knowledge of full-stack development and gain a deeper understanding of how different technologies can work together to create a cohesive application.
+
+In the end, LaNote is a fun and playful application that allows users to relive the thrill of passing notes in school, but in our modern digital age. I hope that it brings joy and excitement to people in the dating scene and in relationships, and serves as an example of what can be achieved with careful planning and hard work. Now, I dare you to send a little “Do you like me?” note to your own crush or special person. 😉

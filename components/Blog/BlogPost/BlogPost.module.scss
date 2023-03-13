@@ -22,15 +22,21 @@
   li {
     font-size: 1rem;
     font-weight: 300;
-    margin: 0 0 1em 3em;
+    margin: 0 0 1em 1em;
     opacity: 0.8;
     line-height: 200%;
     position: relative;
+  }
 
-    &::before {
-      content: "-";
-      position: absolute;
-      left: -1em;
+  ul {
+    li {
+      margin: 0 0 1em 3em;
+
+      &::before {
+        content: "-";
+        position: absolute;
+        left: -1em;
+      }
     }
   }
 }
