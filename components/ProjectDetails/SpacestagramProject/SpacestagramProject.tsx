@@ -21,7 +21,7 @@ export function SpacestagramProject() {
 
   const heroMarkup = (
     <HeroTemplate
-      title="Spacetr"
+      title="Spacetr."
       subtitle="Spacetr allows users to discover the wonders of space by browsing through NASA’s astronomy pictures of the day and saving their favorites."
     >
       <motion.div variants={mockupsVariant} initial="hidden" animate="visible">

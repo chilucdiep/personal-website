@@ -6,7 +6,7 @@ export function Spacestagram() {
     <WorkCard
       side="left"
       subtitle="An astronomy app"
-      title="Spacetr"
+      title="Spacetr."
       description="Spacetr is a web app where users can browse through
       NASA’s pictures, read about their context/information and
       save their favorites. For this fun challenge, I fetched the
