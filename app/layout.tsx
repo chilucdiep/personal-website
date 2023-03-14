@@ -10,10 +10,9 @@ const poppins = Poppins({ weight: ["300", "500", "600"], subsets: ["latin"] });
 const dm = DM_Sans({
   variable: "--font-inter",
   // style: ["normal", "italic"],
-  weight: "400",
   adjustFontFallback: false,
   fallback: ["DM_Sans_f83988"],
-  // weight: ["400", "500", "700"],
+  weight: ["400", "500", "700"],
 });
 
 console.log(dm.variable);
