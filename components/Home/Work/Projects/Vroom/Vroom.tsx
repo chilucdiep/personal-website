@@ -4,7 +4,7 @@ import VroomThumbnail from "./VroomThumbnail";
 export function Vroom() {
   return (
     <WorkCard
-      side="right"
+      side="left"
       subtitle="A vehicle rental company"
       title="Vroom 2"
       description="Vroom2 is a Slingshot vehicle rental company with the

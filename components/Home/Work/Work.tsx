@@ -36,12 +36,12 @@ export function Work() {
 
   const workMarkup = isFeaturesSelected ? (
     <>
+      <Daylee />
       <Spacestagram />
-      <Vroom />
     </>
   ) : (
     <>
-      <Daylee />
+      <Vroom />
     </>
   );
 

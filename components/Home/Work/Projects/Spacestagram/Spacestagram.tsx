@@ -4,7 +4,7 @@ import SpacestagramThumbnail from "./SpacestagramThumbnail";
 export function Spacestagram() {
   return (
     <WorkCard
-      side="left"
+      side="right"
       subtitle="An astronomy app"
       title="Spacetr."
       description="Spacetr is a web app where users can browse through
