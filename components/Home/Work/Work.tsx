@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Compati } from "./Projects/Compati";
 import { Daylee } from "./Projects/Daylee";
 import { Spacestagram } from "./Projects/Spacestagram";
 import { Vroom } from "./Projects/Vroom";
@@ -36,11 +37,12 @@ export function Work() {
 
   const workMarkup = isFeaturesSelected ? (
     <>
-      <Daylee />
-      <Spacestagram />
+      <Compati />
     </>
   ) : (
     <>
+      <Daylee />
+      <Spacestagram />
       <Vroom />
     </>
   );

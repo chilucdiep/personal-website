@@ -5,7 +5,7 @@ export function Daylee() {
   return (
     <WorkCard
       side="left"
-      subtitle="A productivity app"
+      subtitle="organize your thoughts and schedule"
       title="Daylee"
       description="Daylee is a productivity web app where users can utilize various tools
           and widgets such as habit trackers and bullet journaling to organize
