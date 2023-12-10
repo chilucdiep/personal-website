@@ -1,6 +1,6 @@
 "use client";
 
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import "./globals.scss";

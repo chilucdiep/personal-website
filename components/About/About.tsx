@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./About.module.scss";
 import { Journey } from "./Journey";
 import { Experience } from "./Experience";
