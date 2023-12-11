@@ -1,0 +1,62 @@
+.Display {
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.Blob {
+  background-color: white;
+  height: 12vmax;
+  aspect-ratio: 1;
+  position: fixed;
+  translate: -10% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--mainColor), #e2a1fa);
+  animation: rotate 10s infinite;
+  opacity: 0.3;
+  filter: blur(55px);
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+    translate: 10%;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.Blob2 {
+  background-color: white;
+  height: 10vmax;
+  aspect-ratio: 1;
+  position: fixed;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--mainColor), #e2a1fa);
+  animation: rotate2 7s infinite;
+  opacity: 0.3;
+  filter: blur(55px);
+}
+
+@keyframes rotate2 {
+  from {
+    rotate: 0deg;
+    scale: 1 1.5;
+  }
+
+  50% {
+    scale: 1.5 1;
+  }
+
+  to {
+    rotate: -360deg;
+    scale: 1 1.5;
+  }
+}
