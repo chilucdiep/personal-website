@@ -2,13 +2,13 @@ svg {
   .EmotionCard {
     transform-origin: center;
     transform-box: fill-box;
-    transform: rotateZ(-22deg) translate(15px, -20px);
+    transform: rotateZ(-20deg) translate(40px, -20px) scale(1.1);
     transition: all 0.3s ease-in-out;
   }
 
   &:hover {
     .EmotionCard {
-      transform: rotateZ(-15deg) translate(20px, -15px);
+      transform: rotateZ(-12deg) translate(50px, -20px) scale(1.1);
     }
   }
 }

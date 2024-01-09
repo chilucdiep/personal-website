@@ -79,7 +79,7 @@
   .Thumbnail {
     svg {
       overflow: visible;
-      width: 330px;
+      width: 100%;
 
       @media screen and (min-width: 700px) {
         width: 400px;
@@ -87,7 +87,7 @@
       }
 
       @media screen and (min-width: 1000px) {
-        width: 550px !important;
+        width: 620px !important;
       }
     }
   }
