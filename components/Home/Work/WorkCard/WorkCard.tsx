@@ -9,6 +9,7 @@ interface WorkCardProps {
   side: "left" | "right";
   subtitle: string;
   title: string;
+  date: string;
   description: string;
   tech: string;
   projectUrl: string;
@@ -22,6 +23,7 @@ export function WorkCard({
   side,
   subtitle,
   title,
+  date,
   description,
   tech,
   projectUrl,
@@ -55,6 +57,7 @@ export function WorkCard({
     <>
       <h3>{typewriterMarkup}</h3>
       <h2>{title}</h2>
+      <p className={styles.LaunchedText}>Launched on {date}</p>
       <p>
         {description} {!isDone ? <strong>**Under Construction**</strong> : null}
       </p>

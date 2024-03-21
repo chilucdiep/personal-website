@@ -3,11 +3,20 @@
   margin-bottom: 5em;
 
   h2 {
-    margin: 0.3em 0 0.8em;
+    margin: 0.4em 0 0;
   }
 
   p {
     max-width: 540px;
+  }
+
+  .LaunchedText {
+    font-weight: 500;
+    opacity: .4;
+    font-size: 0.8rem;
+    // font-style: italic;
+    // color: #747ec1;
+    margin: 0.4em 0 .5em;
   }
 }
 

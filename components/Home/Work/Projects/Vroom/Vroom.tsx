@@ -7,6 +7,7 @@ export function Vroom() {
       side="left"
       subtitle="A vehicle rental company"
       title="Vroom 2"
+      date="April 2022"
       description="Vroom2 is a Slingshot vehicle rental company with the
         mission to provide an unique and exhilarating experience to
         their customers. As a freelancer, I was responsible for
