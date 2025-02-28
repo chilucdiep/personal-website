@@ -41,8 +41,8 @@ export function Work() {
     </>
   ) : (
     <>
-      <Daylee />
       <Spacestagram />
+      <Daylee />
       <Vroom />
     </>
   );

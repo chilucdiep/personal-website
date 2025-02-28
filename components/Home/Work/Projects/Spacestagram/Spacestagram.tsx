@@ -4,7 +4,7 @@ import SpacestagramThumbnail from "./SpacestagramThumbnail";
 export function Spacestagram() {
   return (
     <WorkCard
-      side="right"
+      side="left"
       subtitle="explore space and your bday's cosmic connection"
       title="Spacetr."
       date="March 2023"

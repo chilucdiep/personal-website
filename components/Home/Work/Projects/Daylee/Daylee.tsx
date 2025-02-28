@@ -4,7 +4,7 @@ import DayleeThumbnail from "./DayleeThumbnail";
 export function Daylee() {
   return (
     <WorkCard
-      side="left"
+      side="right"
       subtitle="organize your thoughts and schedule"
       title="Daylee"
       date="December 2022"
