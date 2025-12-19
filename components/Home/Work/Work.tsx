@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Compati } from "./Projects/Compati";
 import { Daylee } from "./Projects/Daylee";
+import { Nestworth } from "./Projects/Nestworth";
 import { Spacestagram } from "./Projects/Spacestagram";
 import { Vroom } from "./Projects/Vroom";
 import styles from "./Work.module.scss";
@@ -37,6 +38,7 @@ export function Work() {
 
   const workMarkup = isFeaturesSelected ? (
     <>
+      <Nestworth />
       <Compati />
     </>
   ) : (
