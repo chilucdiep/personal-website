@@ -66,7 +66,7 @@ export function WorkCard({
 
   const techMarkup = (
     <p>
-      {tech}
+      <strong>{tech}</strong>
       {figmaUrl ? (
         <>
           {", "}

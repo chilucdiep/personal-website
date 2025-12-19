@@ -27,16 +27,16 @@ export default function NestworthThumbnail() {
 
       {/* Video element with rounded corners */}
       <foreignObject
-        y="198.367"
-        width="104.148"
-        height="188.029"
-        transform="rotate(-20.4 0 198.367)"
+        y="165"
+        width="120"
+        height="216"
+        transform="rotate(-20.4 0 165)"
         clipPath="url(#videoClip)"
         className={styles.EmotionCard}
       >
         <video
-          width="104.148"
-          height="188.029"
+          width="120"
+          height="216"
           autoPlay
           loop
           muted
@@ -53,11 +53,11 @@ export default function NestworthThumbnail() {
       {/* Border outline */}
       <rect
         x="0.964391"
-        y="198.808"
-        width="102.648"
-        height="186.529"
+        y="165.5"
+        width="118.3"
+        height="214.3"
         rx="7.25"
-        transform="rotate(-20.4 0.964391 198.808)"
+        transform="rotate(-20.4 0.964391 165.5)"
         stroke="black"
         strokeOpacity="0.85"
         strokeWidth="1"
