@@ -46,7 +46,7 @@ export default function NestworthThumbnail() {
             borderRadius: "8px",
           }}
         >
-          <source src="/NestworthApp.mov" type="video/mp4" />
+          <source src="/NestworthDemo.mov" type="video/mp4" />
         </video>
       </foreignObject>
 
