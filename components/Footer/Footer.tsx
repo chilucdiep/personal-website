@@ -45,7 +45,7 @@ export function Footer() {
       <div className={styles.Copyright}>
         <Image src={Logo} alt="Logo" />
         <p>
-          <strong>Chi-Luc Diep &copy; 2023 </strong>
+          <strong>Chi-Luc Diep &copy; 2022</strong>
           <Link
             href="https://github.com/chilucdiep/personal-website"
             target="_blank"

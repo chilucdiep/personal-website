@@ -95,6 +95,23 @@ p {
   }
 }
 
+.Banner {
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0.6em 1.5em;
+
+  a {
+    color: white;
+    font-size: inherit;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
 .Container {
   max-width: 1300px;
   padding: 0.6em 1.5em;

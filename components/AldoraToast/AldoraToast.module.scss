@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Space+Mono&display=swap");
+
+.Toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 288px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.32),
+    0 20px 48px rgba(0, 0, 0, 0.38);
+
+  @media (max-width: 480px) {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    bottom: 12px;
+  }
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 11px;
+}
+
+.TextLogo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.TextLogoWord {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: white;
+  line-height: 1;
+}
+
+.Dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.Description {
+  font-size: 0.77rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.52);
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+
+.Cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  opacity: 0.38;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+.CtaArrow {
+  display: inline-block;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+
+  .Cta:hover & {
+    transform: translateX(4px);
+  }
+}
