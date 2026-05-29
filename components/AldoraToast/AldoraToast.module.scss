@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Space+Mono&display=swap");
 
-.Toast {
+.ToastWrapper {
   position: fixed;
-  bottom: 24px;
+  top: 24px;
   right: 24px;
-  z-index: 9999;
+  z-index: 1000001;
   width: 288px;
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  padding: 16px 16px 14px;
+  border-radius: 19px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.42) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0.42) 100%);
   box-shadow:
     0 4px 16px rgba(0, 0, 0, 0.32),
     0 20px 48px rgba(0, 0, 0, 0.38);
@@ -18,8 +17,15 @@
     left: 12px;
     right: 12px;
     width: auto;
-    bottom: 12px;
+    top: 12px;
   }
+}
+
+.Toast {
+  position: relative;
+  background: #111;
+  border-radius: 18px;
+  padding: 16px 16px 14px;
 }
 
 .Header {
@@ -45,6 +51,9 @@
 }
 
 .Dismiss {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +65,6 @@
   cursor: pointer;
   color: rgba(255, 255, 255, 0.4);
   padding: 0;
-  flex-shrink: 0;
 }
 
 .Description {
